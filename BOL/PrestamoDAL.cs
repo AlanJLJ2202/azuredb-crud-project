@@ -9,32 +9,33 @@ using System.Threading.Tasks;
 
 namespace BOL
 {
-    public class AhorroDAL
+    public class PrestamoDAL
     {
-        private static volatile AhorroDAL instance = null;
+        private static volatile PrestamoDAL instance = null;
         private static readonly object padlock = new object();
         private DataAccess dataAccess = DataAccess.Instance();
 
-        private AhorroDAL() { }
+        private PrestamoDAL() { }
 
-        public static AhorroDAL Instance()
+        public static PrestamoDAL Instance()
         {
             if (instance == null)//verificar si hay una instancia creada
                 lock (padlock)
                     if (instance == null)
-                        instance = new AhorroDAL();
+                        instance = new PrestamoDAL();
             return instance;
         }
 
-        public int Add(Ahorro ahorro)
+        public int Add(Prestamo prestamo)
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[3];
-                parameters[0] = new SqlParameter("@idSocio", ahorro.idSocio);
-                parameters[1] = new SqlParameter("@monto", ahorro.monto);
-                parameters[2] = new SqlParameter("@tasaInteres", ahorro.tasaInteres);
-                string query = "stp_ahorros_add";
+                SqlParameter[] parameters = new SqlParameter[4];
+                parameters[0] = new SqlParameter("@idSocio", prestamo.idSocio);
+                parameters[1] = new SqlParameter("@fecha", prestamo.fecha);
+                parameters[2] = new SqlParameter("@monto", prestamo.monto);
+                parameters[3] = new SqlParameter("@tasaInteres", prestamo.tasaInteres);
+                string query = "stp_prestamo_add";
                 return dataAccess.Execute(query, parameters);
             }
 
@@ -44,13 +45,13 @@ namespace BOL
             }
         }
 
-        public int Delete(Ahorro ahorro)
+        public int Delete(Prestamo prestamo)
         {
             try
             {
                 SqlParameter[] parameters = new SqlParameter[1];
-                parameters[0] = new SqlParameter("@idAhorro", ahorro.idAhorro);
-                string query = "stp_ahorros_delete";
+                parameters[0] = new SqlParameter("@idPrestamo", prestamo.idPrestamo);
+                string query = "stp_prestamos_delete";
                 return dataAccess.Execute(query, parameters);
             }
             catch (Exception ex)
@@ -59,25 +60,26 @@ namespace BOL
             }
         }
 
-        public Ahorros GetAll()
+        public Prestamos GetAll()
         {
             try
             {
-                string query = "stp_ahorros_getall";
+                string query = "stp_prestamos_getall";
                 DataTable resultado = dataAccess.Query(query);
-                Ahorros ahorros = new Ahorros();
+                Prestamos prestamos = new Prestamos();
                 foreach (DataRow item in resultado.Rows)
                 {
-                    ahorros.Add(new Ahorro()
+                    prestamos.Add(new Prestamo()
                     {
-                        idAhorro = (int)item["idAhorro"],
+                        idPrestamo = (int)item["idPrestamo"],
                         idSocio = (int)item["idSocio"],
+                        fecha = (Date)item["fecha"],
                         monto = (decimal)item["monto"],
                         tasaInteres = (decimal)item["tasaInteres"],
                         activo = (bool)item["activo"]
                     });
                 }
-                return ahorros;
+                return prestamos;
             }
             catch (Exception ex)
             {
@@ -85,28 +87,29 @@ namespace BOL
             }
         }
 
-        public Ahorro GetByID(Ahorro ahorro)
+        public Prestamo GetByID(Prestamo prestamo)
         {
             try
             {
                 SqlParameter[] parameters = new SqlParameter[1];
-                parameters[0] = new SqlParameter("@idAhorro", ahorro.idAhorro);
-                string query = "stp_ahorros_getbyid";
+                parameters[0] = new SqlParameter("@idPrestamo", prestamo.idPrestamo);
+                string query = "stp_prestamos_getbyid";
                 DataTable resultado = dataAccess.Query(query, parameters);
 
                 if (resultado.Rows.Count > 0)
                 {
-                    ahorro = new Ahorro()
+                    prestamo = new Prestamo()
                     {
-                        idAhorro = (int)resultado.Rows[0]["idAhorro"],
+                        idPrestamo = (int)resultado.Rows[0]["idPrestamo"],
                         idSocio = (int)resultado.Rows[0]["idSocio"],
+                        fecha = (Date)resultado.Rows[0]["fecha"],
                         monto = (decimal)resultado.Rows[0]["monto"],
                         tasaInteres = (decimal)resultado.Rows[0]["tasaInteres"],
                         activo = (bool)resultado.Rows[0]["activo"]
                     };
 
                 }
-                return ahorro;
+                return prestamo;
             }
             catch (Exception ex)
             {
@@ -115,17 +118,19 @@ namespace BOL
         }
 
 
-        public int Update(Ahorro ahorro)
+        public int Update(Prestamo prestamo)
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[4];
-                parameters[0] = new SqlParameter("@idAhorro", ahorro.idAhorro);
-                parameters[1] = new SqlParameter("@idSocio", ahorro.idSocio);
-                parameters[2] = new SqlParameter("@monto", ahorro.monto);
-                parameters[3] = new SqlParameter("@tasaInteres", ahorro.tasaInteres);
+                SqlParameter[] parameters = new SqlParameter[5];
 
-                string query = "stp_ahorros_update";
+                parameters[0] = new SqlParameter("@idPrestamo", prestamo.idSocio);
+                parameters[1] = new SqlParameter("@idSocio", prestamo.idSocio);
+                parameters[2] = new SqlParameter("@fecha", prestamo.fecha);
+                parameters[3] = new SqlParameter("@monto", prestamo.monto);
+                parameters[4] = new SqlParameter("@tasaInteres", prestamo.tasaInteres);
+
+                string query = "stp_prestamos_update";
                 return dataAccess.Execute(query, parameters);
             }
             catch (Exception ex)
@@ -133,5 +138,8 @@ namespace BOL
                 throw new ApplicationException("Error" + ex.Message);
             }
         }
+
+
+
     }
 }

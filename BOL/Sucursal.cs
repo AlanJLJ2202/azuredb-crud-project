@@ -14,6 +14,7 @@ namespace BOL
         public string telefono{ get; set; }
         public bool activo { get; set; }
 
+        public Sucursal() { }
 
     }
 }

@@ -9,148 +9,149 @@ using System.Threading.Tasks;
 
 namespace BOL
 {
-    public class AreaDAL
+    public class UsuarioDAL
     {
-        private static volatile AreaDAL instance = null;
+        private static volatile UsuarioDAL instance = null;
         private static readonly object padlock = new object();
         private DataAccess dataAccess = DataAccess.Instance();
 
-        private AreaDAL() { }
+        private UsuarioDAL() { }
 
-        public static AreaDAL Instance()
+        public static UsuarioDAL Instance()
         {
             if (instance == null)//verificar si hay una instancia creada
                 lock (padlock)
                     if (instance == null)
-                        instance = new AreaDAL();
+                        instance = new UsuarioDAL();
             return instance;
         }
 
-        public int Add(Area area)
-        {
-            try
-            {
-                SqlParameter[] parameters = new SqlParameter[2];
-                parameters[0] = new SqlParameter("@nombre", area.nombre);
-                parameters[1] = new SqlParameter("@descripcion", area.descripcion);
-                string query = "stp_areas_add";
-                return dataAccess.Execute(query, parameters);
-            }
-
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Error" + ex.Message);
-            }
-        }
-
-        public int Delete(Area area)
-        {
-            try
-            {
-                SqlParameter[] parameters = new SqlParameter[1];
-                parameters[0] = new SqlParameter("@idArea", area.idArea);
-                string query = "stp_areas_delete";
-                return dataAccess.Execute(query, parameters);
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Error" + ex.Message);
-            }
-        }
-
-        public Areas GetAll()
-        {
-            try
-            {
-                string query = "stp_areas_getall";
-                DataTable resultado = dataAccess.Query(query);
-                Areas areas = new Areas();
-                foreach (DataRow item in resultado.Rows)
-                {
-                    areas.Add(new Area()
-                    {
-                        idArea = (int)item["idArea"],
-                        nombre = (string)item["nombre"],
-                        descripcion = (string)item["descripcion"],
-                        activo = (bool)item["activo"]
-                    });
-                }
-                return areas;
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Error" + ex.Message);
-            }
-        }
-
-        public Area GetByID(Area area)
-        {
-            try
-            {
-                SqlParameter[] parameters = new SqlParameter[1];
-                parameters[0] = new SqlParameter("@idArea", area.idArea);
-                string query = "stp_areas_getbyid";
-                DataTable resultado = dataAccess.Query(query, parameters);
-
-                if (resultado.Rows.Count > 0)
-                {
-                    area = new Area()
-                    {
-                        idArea = (int)resultado.Rows[0]["idArea"],
-                        nombre = (string)resultado.Rows[0]["nombre"],
-                        descripcion = (string)resultado.Rows[0]["descripcion"],
-                        activo = (bool)resultado.Rows[0]["activo"]
-                    };
-
-                }
-                return area;
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Error" + ex.Message);
-            }
-        }
-
-        public Area GetByDescripcion(Area area)
-        {
-            try
-            {
-                SqlParameter[] parameters = new SqlParameter[1];
-                parameters[0] = new SqlParameter("@nombre", area.nombre);
-                string query = "stp_areas_getbydescripcion";
-                DataTable resultado = dataAccess.Query(query, parameters);
-
-                if (resultado.Rows.Count > 0)
-                {
-                    area = new Area()
-                    {
-                        idArea = (int)resultado.Rows[0]["idCategoria"],
-                        nombre = (string)resultado.Rows[0]["nombre"],
-                        descripcion = (string)resultado.Rows[0]["descripcion"],
-                        activo = (bool)resultado.Rows[0]["activo"]
-                    };
-                }
-                return area;
-            }
-
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Error" + ex.Message);
-            }
-        }
-
-
-
-        public int Update(Area area)
+        public int Add(Usuario usuario)
         {
             try
             {
                 SqlParameter[] parameters = new SqlParameter[3];
-                parameters[0] = new SqlParameter("@idArea", area.idArea);
-                parameters[1] = new SqlParameter("@nombre", area.nombre);
-                parameters[2] = new SqlParameter("@descripcion", area.descripcion);
+                parameters[0] = new SqlParameter("@nombre", usuario.nombre);
+                parameters[1] = new SqlParameter("@password", usuario.password);
+                string query = "stp_usuarios_add";
+                return dataAccess.Execute(query, parameters);
+            }
+
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+        public int Delete(Usuario usuario)
+        {
+            try
+            {
+                SqlParameter[] parameters = new SqlParameter[1];
+                parameters[0] = new SqlParameter("@idUsuario", usuario.idUsuario);
+                string query = "stp_usuarios_delete";
+                return dataAccess.Execute(query, parameters);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+        public Usuarios GetAll()
+        {
+            try
+            {
+                string query = "stp_usuarios_getall";
+                DataTable resultado = dataAccess.Query(query);
+                Usuarios usuarios = new Usuarios();
+                foreach (DataRow item in resultado.Rows)
+                {
+                    usuarios.Add(new Usuario()
+                    {
+                        idUsuario = (int)item["idUsuario"],
+                        nombre = (string)item["nombre"],
+                        password = (string)item["password"],
+                        activo = (bool)item["activo"]
+                    });
+                }
+                return usuarios;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+        public Usuario GetByID(Usuario usuario)
+        {
+            try
+            {
+                SqlParameter[] parameters = new SqlParameter[1];
+                parameters[0] = new SqlParameter("@idUsuario", usuario.idUsuario);
+                string query = "stp_usuarios_getbyid";
+                DataTable resultado = dataAccess.Query(query, parameters);
+
+                if (resultado.Rows.Count > 0)
+                {
+                    usuario = new Usuario()
+                    {
+                        idUsuario = (int)resultado.Rows[0]["idUsuario"],
+                        nombre = (string)resultado.Rows[0]["nombre"],
+                        password = (string)resultado.Rows[0]["password"],
+                        activo = (bool)resultado.Rows[0]["activo"]
+                    };
+
+                }
+                return usuario;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+        public Usuario GetByDescripcion(Usuario usuario)
+        {
+            try
+            {
+                SqlParameter[] parameters = new SqlParameter[1];
+                parameters[0] = new SqlParameter("@nombre", usuario.nombre);
+                string query = "stp_usuarios_getbydescripcion";
+                DataTable resultado = dataAccess.Query(query, parameters);
+
+                if (resultado.Rows.Count > 0)
+                {
+                    usuario = new Usuario()
+                    {
+                        idUsuario = (int)resultado.Rows[0]["idUsuario"],
+                        nombre = (string)resultado.Rows[0]["nombre"],
+                        password = (string)resultado.Rows[0]["password"],
+                        activo = (bool)resultado.Rows[0]["activo"]
+                    };
+                }
+                return usuario;
+            }
+
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+
+
+        public int Update(Usuario usuario)
+        {
+            try
+            {
+                SqlParameter[] parameters = new SqlParameter[3];
+                parameters[0] = new SqlParameter("@idUsuario", usuario.idUsuario);
+                parameters[1] = new SqlParameter("@nombre", usuario.nombre);
+                parameters[1] = new SqlParameter("@password", usuario.password);
                 
-                string query = "stp_areas_update";
+
+                string query = "stp_usuarios_update";
                 return dataAccess.Execute(query, parameters);
             }
             catch (Exception ex)
@@ -160,8 +161,4 @@ namespace BOL
         }
 
     }
-
-
-
 }
-
