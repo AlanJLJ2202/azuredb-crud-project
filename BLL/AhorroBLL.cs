@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class SocioBLL
+    public class AhorroBLL
     {
-        private static volatile SocioBLL instance = null;
+        private static volatile AhorroBLL instance = null;
         private static readonly object padlock = new object();
-        private SocioDAL socioDAL = SocioDAL.Instance();
+        private AhorroDAL ahorroDAL = AhorroDAL.Instance();
 
 
-        public static SocioBLL Instance()
+        public static AhorroBLL Instance()
         {
             if (instance == null)
                 lock (padlock)
                     if (instance == null)
-                        instance = new SocioBLL();
+                        instance = new AhorroBLL();
             return instance;
         }
 
@@ -27,44 +27,38 @@ namespace BLL
         //Sigue metodo para
         //Agregar, Eliminar, Actualizar
 
-        public bool Add(Socio socio)
+        public bool Add(Ahorro ahorro)
         {
-            if (socioDAL.Add(socio) > 0)
+            if (ahorroDAL.Add(ahorro) > 0)
                 return true;
             else
                 return false;
         }
 
-        public bool Delete(Socio socio)
+        public bool Delete(Ahorro ahorro)
         {
-            if (socioDAL.Delete(socio) > 0)
+            if (ahorroDAL.Delete(ahorro) > 0)
                 return true;
             else
                 return false;
         }
 
-        public Socios GetAll()
+        public Ahorros GetAll()
         {
-            return socioDAL.GetAll();
+            return ahorroDAL.GetAll();
         }
 
-        public Socio GetByID(Socio socio)
+        public Ahorro GetByID(Ahorro ahorro)
         {
-            return socioDAL.GetByID(socio);
+            return ahorroDAL.GetByID(ahorro);
         }
 
-        public Socio GetByDescripcion(Socio socio)
+        public bool Update(Ahorro ahorro)
         {
-            return socioDAL.GetByDescripcion(socio);
-        }
-
-        public bool Update(Socio socio)
-        {
-            if (socioDAL.Update(socio) > 0)
+            if (ahorroDAL.Update(ahorro) > 0)
                 return true;
             else
                 return false;
         }
-
     }
 }

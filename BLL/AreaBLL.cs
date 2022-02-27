@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class SocioBLL
+    public class AreaBLL
     {
-        private static volatile SocioBLL instance = null;
+        private static volatile AreaBLL instance = null;
         private static readonly object padlock = new object();
-        private SocioDAL socioDAL = SocioDAL.Instance();
+        private AreaDAL areaDAL = AreaDAL.Instance();
 
 
-        public static SocioBLL Instance()
+        public static AreaBLL Instance()
         {
             if (instance == null)
                 lock (padlock)
                     if (instance == null)
-                        instance = new SocioBLL();
+                        instance = new AreaBLL();
             return instance;
         }
 
@@ -27,44 +27,43 @@ namespace BLL
         //Sigue metodo para
         //Agregar, Eliminar, Actualizar
 
-        public bool Add(Socio socio)
+        public bool Add(Area area)
         {
-            if (socioDAL.Add(socio) > 0)
+            if (areaDAL.Add(area) > 0)
                 return true;
             else
                 return false;
         }
 
-        public bool Delete(Socio socio)
+        public bool Delete(Area area)
         {
-            if (socioDAL.Delete(socio) > 0)
+            if (areaDAL.Delete(area) > 0)
                 return true;
             else
                 return false;
         }
 
-        public Socios GetAll()
+        public Areas GetAll()
         {
-            return socioDAL.GetAll();
+            return areaDAL.GetAll();
         }
 
-        public Socio GetByID(Socio socio)
+        public Area GetByID(Area area)
         {
-            return socioDAL.GetByID(socio);
+            return areaDAL.GetByID(area);
         }
 
-        public Socio GetByDescripcion(Socio socio)
+        public Area GetByDescripcion(Area area)
         {
-            return socioDAL.GetByDescripcion(socio);
+            return areaDAL.GetByDescripcion(area);
         }
 
-        public bool Update(Socio socio)
+        public bool Update(Area area)
         {
-            if (socioDAL.Update(socio) > 0)
+            if (areaDAL.Update(area) > 0)
                 return true;
             else
                 return false;
         }
-
     }
 }

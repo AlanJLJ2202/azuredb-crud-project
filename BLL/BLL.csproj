@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AhorroBLL.cs" />
+    <Compile Include="AreaBLL.cs" />
+    <Compile Include="ColaboradorBLL.cs" />
+    <Compile Include="PrestamoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SocioBLL.cs" />
+    <Compile Include="SucursalBLL.cs" />
+    <Compile Include="UsuarioBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BOL\BOL.csproj">

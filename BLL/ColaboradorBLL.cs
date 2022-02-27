@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class SocioBLL
+    public class ColaboradorBLL
     {
-        private static volatile SocioBLL instance = null;
+        private static volatile ColaboradorBLL instance = null;
         private static readonly object padlock = new object();
-        private SocioDAL socioDAL = SocioDAL.Instance();
+        private ColaboradorDAL colaboradorDAL = ColaboradorDAL.Instance();
 
 
-        public static SocioBLL Instance()
+        public static ColaboradorBLL Instance()
         {
             if (instance == null)
                 lock (padlock)
                     if (instance == null)
-                        instance = new SocioBLL();
+                        instance = new ColaboradorBLL();
             return instance;
         }
 
@@ -27,44 +27,39 @@ namespace BLL
         //Sigue metodo para
         //Agregar, Eliminar, Actualizar
 
-        public bool Add(Socio socio)
+        public bool Add(Colaborador colaborador)
         {
-            if (socioDAL.Add(socio) > 0)
+            if (colaboradorDAL.Add(area) > 0)
                 return true;
             else
                 return false;
         }
 
-        public bool Delete(Socio socio)
+        public bool Delete(Colaborador colaborador)
         {
-            if (socioDAL.Delete(socio) > 0)
+            if (colaboradorDAL.Delete(area) > 0)
                 return true;
             else
                 return false;
         }
 
-        public Socios GetAll()
+        public Colaboradores GetAll()
         {
-            return socioDAL.GetAll();
+            return colaboradorDAL.GetAll();
         }
 
-        public Socio GetByID(Socio socio)
+        public Colaborador GetByID(Colaborador colaborador)
         {
-            return socioDAL.GetByID(socio);
+            return colaboradorDAL.GetByID(colaborador);
         }
-
-        public Socio GetByDescripcion(Socio socio)
+        public bool Update(Colaborador colaborador)
         {
-            return socioDAL.GetByDescripcion(socio);
-        }
-
-        public bool Update(Socio socio)
-        {
-            if (socioDAL.Update(socio) > 0)
+            if (colaboradorDAL.Update(colaborador) > 0)
                 return true;
             else
                 return false;
         }
+
 
     }
 }

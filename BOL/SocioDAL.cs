@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BOL
 {
-    class SocioDAL
+    public class SocioDAL
     {
         private static volatile SocioDAL instance = null;
         private static readonly object padlock = new object();
@@ -121,6 +121,38 @@ namespace BOL
                 }
                 return socio;
             }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+        public Socio GetByDescripcion(Socio socio)
+        {
+            try
+            {
+                SqlParameter[] parameters = new SqlParameter[1];
+                parameters[0] = new SqlParameter("@nombre", socio.nombre);
+                string query = "stp_socios_getbydescripcion";
+                DataTable resultado = dataAccess.Query(query, parameters);
+
+                if (resultado.Rows.Count > 0)
+                {
+                    socio = new Socio()
+                    {
+                        idSocio = (int)resultado.Rows[0]["idSocio"],
+                        nombre = (string)resultado.Rows[0]["nombre"],
+                        apellido = (string)resultado.Rows[0]["apellido"],
+                        edad = (int)resultado.Rows[0]["edad"],
+                        idSucursal = (int)resultado.Rows[0]["idSucursal"],
+                        idAhorro = (int)resultado.Rows[0]["idArea"],
+                        idPrestamo = (int)resultado.Rows[0]["idPrestamo"],
+                        activo = (bool)resultado.Rows[0]["activo"]
+                    };
+                }
+                return socio;
+            }
+
             catch (Exception ex)
             {
                 throw new ApplicationException("Error" + ex.Message);
