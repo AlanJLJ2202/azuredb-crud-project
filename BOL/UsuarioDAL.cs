@@ -26,6 +26,38 @@ namespace BOL
             return instance;
         }
 
+        public Usuario Login(Usuario usuario)
+        {
+            try
+            {
+                SqlParameter[] parameters = new SqlParameter[2];
+                parameters[0] = new SqlParameter("@nombre", usuario.nombre);
+                parameters[1] = new SqlParameter("@password", usuario.password);
+                string query = "stp_usuarios_login";
+                DataTable resultado = dataAccess.Query(query, parameters);
+
+                if (resultado.Rows.Count > 0)
+                {
+                    Usuario ObjUsuario = new Usuario()
+                    {
+                        idUsuario = (int)resultado.Rows[0]["idUsuario"],
+                        nombre = (string)resultado.Rows[0]["nombre"],
+                        password = (string)resultado.Rows[0]["password"],
+                        activo = (bool)resultado.Rows[0]["activo"]
+                    };
+                    return ObjUsuario;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error" + ex.Message);
+            }
+        }
+
+
+
+
         public int Add(Usuario usuario)
         {
             try

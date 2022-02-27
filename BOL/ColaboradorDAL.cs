@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BOL
 {
-    class ColaboradorDAL
+    public class ColaboradorDAL
     {
         private static volatile ColaboradorDAL instance = null;
         private static readonly object padlock = new object();

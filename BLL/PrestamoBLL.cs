@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class SocioBLL
+    public class PrestamoBLL
     {
-        private static volatile SocioBLL instance = null;
+        private static volatile PrestamoBLL instance = null;
         private static readonly object padlock = new object();
-        private SocioDAL socioDAL = SocioDAL.Instance();
+        private PrestamoDAL prestamoDAL = PrestamoDAL.Instance();
 
 
-        public static SocioBLL Instance()
+        public static PrestamoBLL Instance()
         {
             if (instance == null)
                 lock (padlock)
                     if (instance == null)
-                        instance = new SocioBLL();
+                        instance = new PrestamoBLL();
             return instance;
         }
 
@@ -27,44 +27,41 @@ namespace BLL
         //Sigue metodo para
         //Agregar, Eliminar, Actualizar
 
-        public bool Add(Socio socio)
+        public bool Add(Prestamo prestamo)
         {
-            if (socioDAL.Add(socio) > 0)
+            if (prestamoDAL.Add(prestamo) > 0)
                 return true;
             else
                 return false;
         }
 
-        public bool Delete(Socio socio)
+        public bool Delete(Prestamo prestamo)
         {
-            if (socioDAL.Delete(socio) > 0)
+            if (prestamoDAL.Delete(prestamo) > 0)
                 return true;
             else
                 return false;
         }
 
-        public Socios GetAll()
+        public Prestamos GetAll()
         {
-            return socioDAL.GetAll();
+            return prestamoDAL.GetAll();
         }
 
-        public Socio GetByID(Socio socio)
+        public Prestamo GetByID(Prestamo prestamo)
         {
-            return socioDAL.GetByID(socio);
+            return prestamoDAL.GetByID(prestamo);
         }
 
-        public Socio GetByDescripcion(Socio socio)
+        public bool Update(Prestamo prestamo)
         {
-            return socioDAL.GetByDescripcion(socio);
-        }
-
-        public bool Update(Socio socio)
-        {
-            if (socioDAL.Update(socio) > 0)
+            if (prestamoDAL.Update(prestamo) > 0)
                 return true;
             else
                 return false;
         }
+
+
 
     }
 }
