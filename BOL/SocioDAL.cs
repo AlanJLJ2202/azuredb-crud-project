@@ -30,14 +30,13 @@ namespace BOL
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[7];
+                SqlParameter[] parameters = new SqlParameter[5];
                 parameters[0] = new SqlParameter("@nombre", socio.nombre);
                 parameters[1] = new SqlParameter("@apellido", socio.apellido);
                 parameters[2] = new SqlParameter("@edad", socio.edad);
                 parameters[3] = new SqlParameter("@direccion", socio.direccion);
                 parameters[4] = new SqlParameter("@idSucursal", socio.idSucursal);
-                parameters[5] = new SqlParameter("@idAhorro", socio.idAhorro);
-                parameters[6] = new SqlParameter("@idPrestamo", socio.idPrestamo);
+                
 
 
                 string query = "stp_socios_add";
@@ -82,8 +81,7 @@ namespace BOL
                         edad = (int)item["edad"],
                         direccion = (string)item["direccion"],
                         idSucursal = (int)item["idSucursal"],
-                        idAhorro = (int)item["idAhorro"],
-                        idPrestamo = (int)item["idPrestamo"],
+                        
                         activo = (bool)item["activo"]
                     });
                 }
@@ -112,9 +110,9 @@ namespace BOL
                         nombre = (string)resultado.Rows[0]["nombre"],
                         apellido = (string)resultado.Rows[0]["apellido"],
                         edad = (int)resultado.Rows[0]["edad"],
+                        direccion = (string)resultado.Rows[0]["direccion"],
                         idSucursal = (int)resultado.Rows[0]["idSucursal"],
-                        idAhorro = (int)resultado.Rows[0]["idArea"],
-                        idPrestamo = (int)resultado.Rows[0]["idPrestamo"],
+                       
                         activo = (bool)resultado.Rows[0]["activo"]
                     };
 
@@ -145,8 +143,7 @@ namespace BOL
                         apellido = (string)resultado.Rows[0]["apellido"],
                         edad = (int)resultado.Rows[0]["edad"],
                         idSucursal = (int)resultado.Rows[0]["idSucursal"],
-                        idAhorro = (int)resultado.Rows[0]["idArea"],
-                        idPrestamo = (int)resultado.Rows[0]["idPrestamo"],
+                       
                         activo = (bool)resultado.Rows[0]["activo"]
                     };
                 }
@@ -164,15 +161,14 @@ namespace BOL
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[7];
-                parameters[0] = new SqlParameter("@nombre", socio.nombre);
-                parameters[1] = new SqlParameter("@apellido", socio.apellido);
-                parameters[2] = new SqlParameter("@edad", socio.edad);
-                parameters[3] = new SqlParameter("@direccion", socio.direccion);
-                parameters[4] = new SqlParameter("@idSucursal", socio.idSucursal);
-                parameters[5] = new SqlParameter("@idAhorro", socio.idAhorro);
-                parameters[6] = new SqlParameter("@idPrestamo", socio.idPrestamo);
-                parameters[7] = new SqlParameter("@activo", socio.activo);
+                SqlParameter[] parameters = new SqlParameter[6];
+                parameters[0] = new SqlParameter("@idSocio", socio.idSocio);
+                parameters[1] = new SqlParameter("@nombre", socio.nombre);
+                parameters[2] = new SqlParameter("@apellido", socio.apellido);
+                parameters[3] = new SqlParameter("@edad", socio.edad);
+                parameters[4] = new SqlParameter("@direccion", socio.direccion);
+                parameters[5] = new SqlParameter("@idSucursal", socio.idSucursal);
+                
 
                 string query = "stp_socios_update";
                 return dataAccess.Execute(query, parameters);

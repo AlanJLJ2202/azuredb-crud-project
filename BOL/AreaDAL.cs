@@ -124,7 +124,7 @@ namespace BOL
                 {
                     area = new Area()
                     {
-                        idArea = (int)resultado.Rows[0]["idCategoria"],
+                        idArea = (int)resultado.Rows[0]["idArea"],
                         nombre = (string)resultado.Rows[0]["nombre"],
                         descripcion = (string)resultado.Rows[0]["descripcion"],
                         activo = (bool)resultado.Rows[0]["activo"]

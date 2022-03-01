@@ -107,10 +107,11 @@ namespace BOL
                 {
                     colaborador = new Colaborador()
                     {
-                        idColaborador = (int)resultado.Rows[0]["idAhorro"],
+                        idColaborador = (int)resultado.Rows[0]["idColaborador"],
                         nombre = (string)resultado.Rows[0]["nombre"],
                         apellido = (string)resultado.Rows[0]["apellido"],
                         edad = (int)resultado.Rows[0]["edad"],
+                        direccion = (string)resultado.Rows[0]["direccion"],
                         sueldo = (decimal)resultado.Rows[0]["sueldo"],
                         idSucursal = (int)resultado.Rows[0]["idSucursal"],
                         idArea = (int)resultado.Rows[0]["idArea"],
@@ -131,14 +132,15 @@ namespace BOL
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[4];
-                parameters[0] = new SqlParameter("@nombre", colaborador.nombre);
-                parameters[1] = new SqlParameter("@apellido", colaborador.apellido);
-                parameters[2] = new SqlParameter("@edad", colaborador.edad);
-                parameters[3] = new SqlParameter("@direccion", colaborador.direccion);
-                parameters[4] = new SqlParameter("@sueldo", colaborador.sueldo);
-                parameters[5] = new SqlParameter("@idSucursal", colaborador.idSucursal);
-                parameters[6] = new SqlParameter("@idArea", colaborador.idArea);
+                SqlParameter[] parameters = new SqlParameter[8];
+                parameters[0] = new SqlParameter("@idColaborador", colaborador.idColaborador);
+                parameters[1] = new SqlParameter("@nombre", colaborador.nombre);
+                parameters[2] = new SqlParameter("@apellido", colaborador.apellido);
+                parameters[3] = new SqlParameter("@edad", colaborador.edad);
+                parameters[4] = new SqlParameter("@direccion", colaborador.direccion);
+                parameters[5] = new SqlParameter("@sueldo", colaborador.sueldo);
+                parameters[6] = new SqlParameter("@idSucursal", colaborador.idSucursal);
+                parameters[7] = new SqlParameter("@idArea", colaborador.idArea);
 
                 string query = "stp_colaboradores_update";
                 return dataAccess.Execute(query, parameters);

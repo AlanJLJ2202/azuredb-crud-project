@@ -62,7 +62,7 @@ namespace BOL
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[3];
+                SqlParameter[] parameters = new SqlParameter[2];
                 parameters[0] = new SqlParameter("@nombre", usuario.nombre);
                 parameters[1] = new SqlParameter("@password", usuario.password);
                 string query = "stp_usuarios_add";
@@ -180,7 +180,7 @@ namespace BOL
                 SqlParameter[] parameters = new SqlParameter[3];
                 parameters[0] = new SqlParameter("@idUsuario", usuario.idUsuario);
                 parameters[1] = new SqlParameter("@nombre", usuario.nombre);
-                parameters[1] = new SqlParameter("@password", usuario.password);
+                parameters[2] = new SqlParameter("@password", usuario.password);
                 
 
                 string query = "stp_usuarios_update";

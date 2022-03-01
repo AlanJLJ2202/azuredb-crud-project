@@ -12,7 +12,7 @@ namespace BOL
         public int idPrestamo { get; set; }
         public int idSocio { get; set; }
 
-        public Date fecha { get; set; }
+        public DateTime fecha { get; set; }
 
         public decimal monto { get; set; }
 

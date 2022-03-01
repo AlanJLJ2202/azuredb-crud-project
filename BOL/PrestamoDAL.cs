@@ -35,7 +35,7 @@ namespace BOL
                 parameters[1] = new SqlParameter("@fecha", prestamo.fecha);
                 parameters[2] = new SqlParameter("@monto", prestamo.monto);
                 parameters[3] = new SqlParameter("@tasaInteres", prestamo.tasaInteres);
-                string query = "stp_prestamo_add";
+                string query = "stp_prestamos_add";
                 return dataAccess.Execute(query, parameters);
             }
 
@@ -73,7 +73,7 @@ namespace BOL
                     {
                         idPrestamo = (int)item["idPrestamo"],
                         idSocio = (int)item["idSocio"],
-                        fecha = (Date)item["fecha"],
+                        fecha = (DateTime)item["fecha"],
                         monto = (decimal)item["monto"],
                         tasaInteres = (decimal)item["tasaInteres"],
                         activo = (bool)item["activo"]
@@ -102,7 +102,7 @@ namespace BOL
                     {
                         idPrestamo = (int)resultado.Rows[0]["idPrestamo"],
                         idSocio = (int)resultado.Rows[0]["idSocio"],
-                        fecha = (Date)resultado.Rows[0]["fecha"],
+                        fecha = (DateTime)resultado.Rows[0]["fecha"],
                         monto = (decimal)resultado.Rows[0]["monto"],
                         tasaInteres = (decimal)resultado.Rows[0]["tasaInteres"],
                         activo = (bool)resultado.Rows[0]["activo"]

@@ -19,9 +19,6 @@ namespace BOL
 
         public int idSucursal { get; set; }
 
-        public decimal idAhorro { get; set; }
-
-        public decimal idPrestamo { get; set; }
         public bool activo { get; set; }
 
         public Socio() { }

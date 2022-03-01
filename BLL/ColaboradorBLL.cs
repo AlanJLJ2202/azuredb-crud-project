@@ -29,7 +29,7 @@ namespace BLL
 
         public bool Add(Colaborador colaborador)
         {
-            if (colaboradorDAL.Add(area) > 0)
+            if (colaboradorDAL.Add(colaborador) > 0)
                 return true;
             else
                 return false;
@@ -37,7 +37,7 @@ namespace BLL
 
         public bool Delete(Colaborador colaborador)
         {
-            if (colaboradorDAL.Delete(area) > 0)
+            if (colaboradorDAL.Delete(colaborador) > 0)
                 return true;
             else
                 return false;

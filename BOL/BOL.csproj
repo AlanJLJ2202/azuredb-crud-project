@@ -50,7 +50,6 @@
     <Compile Include="Colaborador.cs" />
     <Compile Include="ColaboradorDAL.cs" />
     <Compile Include="Colaboradores.cs" />
-    <Compile Include="Date.cs" />
     <Compile Include="Prestamo.cs" />
     <Compile Include="PrestamoDAL.cs" />
     <Compile Include="Prestamos.cs" />

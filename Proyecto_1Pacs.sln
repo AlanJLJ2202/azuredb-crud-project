@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.DataAccessLayer", "4.Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{421AC9BA-C353-471A-A493-FA475566F33E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewL", "ViewL\ViewL.csproj", "{EF833CEE-B496-458E-B77D-84AC0A995BBA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PV", "ViewL\PV.csproj", "{EF833CEE-B496-458E-B77D-84AC0A995BBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,9 @@
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\bin\Debug\BOL.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\bin\Debug\BOL.pdb
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\bin\Debug\DAL.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\bin\Debug\DAL.pdb
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.AssemblyReference.cache
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.CopyComplete
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.pdb

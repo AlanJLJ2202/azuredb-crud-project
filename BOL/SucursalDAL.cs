@@ -71,7 +71,8 @@ namespace BOL
                     sucursales.Add(new Sucursal()
                     {
                         idSucursal = (int)item["idSucursal"],
-                        direccion = (string)item["telefono"],
+                        nombre = (string)item["nombre"],
+                        direccion = (string)item["direccion"],
                         telefono = (string)item["telefono"],
                         activo = (bool)item["activo"]
                     });
@@ -129,7 +130,7 @@ namespace BOL
                         idSucursal = (int)resultado.Rows[0]["idSucursal"],
                         nombre = (string)resultado.Rows[0]["nombre"],
                         direccion = (string)resultado.Rows[0]["direccion"],
-                        telefono = (string)resultado.Rows[0]["descripcion"],
+                        telefono = (string)resultado.Rows[0]["telefono"],
                         activo = (bool)resultado.Rows[0]["activo"]
                     };
                 }
@@ -148,11 +149,11 @@ namespace BOL
         {
             try
             {
-                SqlParameter[] parameters = new SqlParameter[3];
+                SqlParameter[] parameters = new SqlParameter[4];
                 parameters[0] = new SqlParameter("@idSucursal", sucursal.idSucursal);
                 parameters[1] = new SqlParameter("@nombre", sucursal.nombre);
-                parameters[1] = new SqlParameter("@direccion", sucursal.direccion);
-                parameters[2] = new SqlParameter("@telefono", sucursal.telefono);
+                parameters[2] = new SqlParameter("@direccion", sucursal.direccion);
+                parameters[3] = new SqlParameter("@telefono", sucursal.telefono);
 
                 string query = "stp_sucursales_update";
                 return dataAccess.Execute(query, parameters);
