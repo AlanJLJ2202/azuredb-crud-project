@@ -62,6 +62,7 @@ namespace ViewL
             // 
             // dgvPrestamos
             // 
+            this.dgvPrestamos.BackgroundColor = System.Drawing.Color.Green;
             this.dgvPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrestamos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPrestamos.Location = new System.Drawing.Point(0, 0);
@@ -109,9 +110,11 @@ namespace ViewL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 484);
             this.Controls.Add(this.toolStripContainer1);
+            this.MaximizeBox = false;
             this.Name = "frmPrestamo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestamos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrestamo_FormClosing);
             this.Load += new System.EventHandler(this.frmPrestamo_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);

@@ -48,11 +48,13 @@ namespace ViewL
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.dgvAreas);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(800, 416);
+            this.toolStripContainer1.ContentPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(711, 333);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(800, 450);
+            this.toolStripContainer1.Size = new System.Drawing.Size(711, 360);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
@@ -62,13 +64,15 @@ namespace ViewL
             // 
             // dgvAreas
             // 
+            this.dgvAreas.BackgroundColor = System.Drawing.Color.Green;
             this.dgvAreas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAreas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvAreas.Location = new System.Drawing.Point(0, 0);
+            this.dgvAreas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAreas.Name = "dgvAreas";
             this.dgvAreas.RowHeadersWidth = 62;
             this.dgvAreas.RowTemplate.Height = 28;
-            this.dgvAreas.Size = new System.Drawing.Size(800, 416);
+            this.dgvAreas.Size = new System.Drawing.Size(711, 333);
             this.dgvAreas.TabIndex = 0;
             // 
             // toolStrip1
@@ -80,7 +84,7 @@ namespace ViewL
             this.btnActualizar});
             this.toolStrip1.Location = new System.Drawing.Point(4, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(178, 34);
+            this.toolStrip1.Size = new System.Drawing.Size(148, 27);
             this.toolStrip1.TabIndex = 0;
             // 
             // btnNuevo
@@ -89,7 +93,7 @@ namespace ViewL
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(68, 29);
+            this.btnNuevo.Size = new System.Drawing.Size(56, 24);
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
@@ -99,19 +103,22 @@ namespace ViewL
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(92, 29);
+            this.btnActualizar.Size = new System.Drawing.Size(79, 24);
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // frmAreas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.toolStripContainer1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "frmAreas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Areas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAreas_FormClosing);
             this.Load += new System.EventHandler(this.frmAreas_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);

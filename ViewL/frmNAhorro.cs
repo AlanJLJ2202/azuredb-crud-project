@@ -37,6 +37,15 @@ namespace ViewL
         }
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text) || string.IsNullOrEmpty(cmbSocio.Text))
+            {
+
+                MessageBox.Show("Debe completar la informacion");
+
+                return;
+
+            }
+
             if (!cmbSocio.Text.Equals(""))
             {
                 idSocio = socioBLL.GetByDescripcion(new Socio()
@@ -94,7 +103,40 @@ namespace ViewL
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
+        }
+
+        private void frmNAhorro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void txtMonto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtTasaInteres_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txtTasaInteres_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

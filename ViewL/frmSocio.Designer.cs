@@ -62,6 +62,7 @@ namespace ViewL
             // 
             // dgvSocios
             // 
+            this.dgvSocios.BackgroundColor = System.Drawing.Color.Green;
             this.dgvSocios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSocios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSocios.Location = new System.Drawing.Point(0, 0);
@@ -109,9 +110,11 @@ namespace ViewL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1034, 481);
             this.Controls.Add(this.toolStripContainer1);
+            this.MaximizeBox = false;
             this.Name = "frmSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Socios";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSocio_FormClosing);
             this.Load += new System.EventHandler(this.frmSocio_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);

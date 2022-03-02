@@ -81,11 +81,12 @@ namespace ViewL
             // 
             // cbSucursal
             // 
+            this.cbSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSucursal.FormattingEnabled = true;
             this.cbSucursal.Location = new System.Drawing.Point(147, 240);
             this.cbSucursal.Name = "cbSucursal";
             this.cbSucursal.Size = new System.Drawing.Size(121, 24);
-            this.cbSucursal.TabIndex = 4;
+            this.cbSucursal.TabIndex = 5;
             // 
             // label5
             // 
@@ -102,7 +103,8 @@ namespace ViewL
             this.txtNombre.Location = new System.Drawing.Point(147, 38);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 22);
-            this.txtNombre.TabIndex = 10;
+            this.txtNombre.TabIndex = 1;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // txtApellido
             // 
@@ -110,7 +112,8 @@ namespace ViewL
             this.txtApellido.Location = new System.Drawing.Point(147, 89);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(121, 22);
-            this.txtApellido.TabIndex = 11;
+            this.txtApellido.TabIndex = 2;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtEdad
             // 
@@ -118,7 +121,8 @@ namespace ViewL
             this.txtEdad.Location = new System.Drawing.Point(147, 139);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(121, 22);
-            this.txtEdad.TabIndex = 12;
+            this.txtEdad.TabIndex = 3;
+            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
             // txtDireccion
             // 
@@ -126,26 +130,29 @@ namespace ViewL
             this.txtDireccion.Location = new System.Drawing.Point(147, 190);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(121, 22);
-            this.txtDireccion.TabIndex = 13;
+            this.txtDireccion.TabIndex = 4;
+            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(40, 297);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(103, 46);
-            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(173, 297);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 46);
-            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmNSocio
             // 
@@ -170,6 +177,7 @@ namespace ViewL
             this.Name = "frmNSocio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Socios";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNSocio_FormClosing);
             this.Load += new System.EventHandler(this.frmNSocio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

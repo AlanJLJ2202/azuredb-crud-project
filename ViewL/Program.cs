@@ -16,6 +16,7 @@ namespace ViewL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+           // if(new frmLogin().ShowDialog() == DialogResult.OK)
             Application.Run(new frmLogin());
         }
     }

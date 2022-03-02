@@ -45,6 +45,7 @@ namespace ViewL
             // 
             // cbSocio
             // 
+            this.cbSocio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSocio.FormattingEnabled = true;
             this.cbSocio.Location = new System.Drawing.Point(66, 25);
             this.cbSocio.Name = "cbSocio";
@@ -107,6 +108,7 @@ namespace ViewL
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(124, 22);
             this.txtMonto.TabIndex = 6;
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
             // txtTasaInteres
             // 
@@ -115,6 +117,7 @@ namespace ViewL
             this.txtTasaInteres.Name = "txtTasaInteres";
             this.txtTasaInteres.Size = new System.Drawing.Size(54, 22);
             this.txtTasaInteres.TabIndex = 7;
+            this.txtTasaInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteres_KeyPress);
             // 
             // btnCancelar
             // 
@@ -125,6 +128,7 @@ namespace ViewL
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -157,6 +161,7 @@ namespace ViewL
             this.Name = "frmNPrestamo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prestamos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNPrestamo_FormClosing);
             this.Load += new System.EventHandler(this.frmNPrestamo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);

@@ -38,5 +38,28 @@ namespace ViewL
         {
             dgvAhorros.DataSource = ahorroBLL.GetAll();
         }
+
+        private void frmAhorros_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

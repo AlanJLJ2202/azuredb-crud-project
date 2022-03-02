@@ -22,6 +22,7 @@ namespace ViewL
 
         public frmNSocio()
         {
+            
             InitializeComponent();
         }
 
@@ -38,11 +39,13 @@ namespace ViewL
 
         private void frmNSocio_Load(object sender, EventArgs e)
         {
+            
             Sucursales sucursales = sucursalBLL.GetAll();
             foreach(Sucursal sucursal in sucursales)
             {
                 cbSucursal.Items.Add(sucursal.nombre);
             }
+            txtNombre.Focus();
         }
 
         public void Clean()
@@ -57,6 +60,20 @@ namespace ViewL
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) || string.IsNullOrEmpty(txtEdad.Text)
+                || string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(cbSucursal.Text))
+            {
+
+                MessageBox.Show("Debe completar la informacion");
+
+                return;
+
+            }
+
+
+
+
+
             if (!cbSucursal.Text.Equals(""))
             {
                 idSucursal = sucursalBLL.GetByDescripcion(new Sucursal()
@@ -100,6 +117,59 @@ namespace ViewL
 
             }
 
+        }
+
+        private void frmNSocio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se permiten letras", "Precaucion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se permiten letras", "Precaucion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtDireccion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se permiten letras", "Precaucion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtEdad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

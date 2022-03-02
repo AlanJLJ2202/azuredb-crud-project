@@ -54,9 +54,11 @@ namespace ViewL
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(233, 22);
             this.txtPassword.TabIndex = 11;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(263, 125);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
@@ -64,6 +66,7 @@ namespace ViewL
             this.btnCancelar.TabIndex = 10;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -84,6 +87,7 @@ namespace ViewL
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(233, 22);
             this.txtNombre.TabIndex = 8;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label1
             // 
@@ -111,6 +115,7 @@ namespace ViewL
             this.Name = "frmNUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNUsuario_FormClosing);
             this.Load += new System.EventHandler(this.frmNUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

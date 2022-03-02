@@ -20,7 +20,7 @@ namespace ViewL
         private void btnAhorros_Click(object sender, EventArgs e)
         {
             frmAhorros obj = new frmAhorros();
-            obj.Show();
+            obj.ShowDialog();
         }
 
         private void btnAreas_Click(object sender, EventArgs e)
@@ -43,8 +43,10 @@ namespace ViewL
 
         private void btnSocios_Click(object sender, EventArgs e)
         {
+            
             frmSocio obj = new frmSocio();
-            obj.Show();
+            obj.ShowDialog();
+            
         }
 
         private void btnSucursales_Click(object sender, EventArgs e)
@@ -57,6 +59,30 @@ namespace ViewL
         {
             frmUsuario obj = new frmUsuario();
             obj.Show();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salir()
+        {
+            
+                this.Close();
+            
+        }
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            salir();
         }
     }
 }

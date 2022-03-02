@@ -62,6 +62,7 @@ namespace ViewL
             // 
             // dgvSucursales
             // 
+            this.dgvSucursales.BackgroundColor = System.Drawing.Color.Green;
             this.dgvSucursales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSucursales.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSucursales.Location = new System.Drawing.Point(0, 0);
@@ -109,9 +110,11 @@ namespace ViewL
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStripContainer1);
+            this.MinimizeBox = false;
             this.Name = "frmSucursal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sucursal";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSucursal_FormClosing);
             this.Load += new System.EventHandler(this.frmSucursal_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);

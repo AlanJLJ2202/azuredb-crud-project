@@ -38,5 +38,13 @@ namespace ViewL
 
             dgvAreas.DataSource = areaBLL.GetAll();
         }
+
+        private void frmAreas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

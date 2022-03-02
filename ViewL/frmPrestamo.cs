@@ -38,5 +38,13 @@ namespace ViewL
         {
             dgvPrestamos.DataSource = prestamoBLL.GetAll();
         }
+
+        private void frmPrestamo_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

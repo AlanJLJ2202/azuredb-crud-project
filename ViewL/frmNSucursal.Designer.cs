@@ -41,12 +41,14 @@ namespace ViewL
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(171, 186);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(95, 46);
             this.btnCancelar.TabIndex = 17;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -65,6 +67,7 @@ namespace ViewL
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(121, 22);
             this.txtDireccion.TabIndex = 21;
+            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // txtNombre
             // 
@@ -73,6 +76,7 @@ namespace ViewL
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(121, 22);
             this.txtNombre.TabIndex = 20;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label4
             // 
@@ -99,6 +103,7 @@ namespace ViewL
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(121, 22);
             this.txtTelefono.TabIndex = 23;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // label2
             // 
@@ -128,6 +133,7 @@ namespace ViewL
             this.Name = "frmNSucursal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sucursales";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNSucursal_FormClosing);
             this.Load += new System.EventHandler(this.frmNSucursal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
