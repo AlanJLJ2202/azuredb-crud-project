@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,58 +11,127 @@ namespace DAL
 {
     public class DataAccess
     {
-        #region singleton
+        #region Singleton
+
         private static volatile DataAccess instance = null;
         private static readonly object padlock = new object();
-        private string conString = "Data Source = localhost; Initial Catalog = Pacs1P; Integrated Security = true";//conexion a la base de datos
+        public static string conString = "Data Source = localhost; Initial Catalog = Pacs; Integrated Security = true";
+        public string InitialCatalog = "";
+        public string DataSource = "";
+        public string UserID = "";
+        public string Password = "";
+        private byte[] Clave = Encoding.ASCII.GetBytes("");
+        private byte[] IV = Encoding.ASCII.GetBytes("DevJoker7.37hAES");
 
-        private DataAccess() { }//constructir privado para ahorrar instanciar diariamente con esto se evita eso
+        private DataAccess()
+        {
+
+        }
+
+
+
         public static DataAccess Instance()
         {
-            if (instance == null)//verificar si hay una instancia creada
+            if (instance == null)
                 lock (padlock)
-                    if (instance == null)
-                        instance = new DataAccess();
+                    if (instance == null) ;
+            instance = new DataAccess();
             return instance;
+
         }
 
         #endregion
-        #region
-        public DataTable Query(string query)
-        {
-            using (SqlConnection con = new SqlConnection(conString))
-            using (SqlCommand cmd = new SqlCommand(query, con) { CommandType = CommandType.StoredProcedure })
-            {
-                con.Open();
-                DataTable resultado = new DataTable();
-                resultado.Load(cmd.ExecuteReader());
-                return resultado;
-            }
-        }
-        public DataTable Query(string query, SqlParameter[] parameters)
-        {
-            using (SqlConnection con = new SqlConnection(conString))
-            using (SqlCommand cmd = new SqlCommand(query, con) { CommandType = CommandType.StoredProcedure })
-            {
-                con.Open();
-                DataTable resultado = new DataTable();
-                cmd.Parameters.AddRange(parameters);
-                resultado.Load(cmd.ExecuteReader());
-                return resultado;
-            }
-        }
-        public int Execute(string query, SqlParameter[] parameters)
+
+        #region Query/Execute
+        public T QuerySingle<T>(String query)
         {
             using (var con = new SqlConnection(conString))
-            using (SqlCommand cmd = new SqlCommand(query, con) { CommandType = CommandType.StoredProcedure })
             {
-                con.Open();
-                cmd.Parameters.AddRange(parameters);
-                return cmd.ExecuteNonQuery();
+                return con.QuerySingle<T>(query, commandType: CommandType.StoredProcedure, commandTimeout: 300);
             }
+        }
 
+        public T QuerySingle<T>(String query, DynamicParameters parameters)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.QuerySingle<T>(query, parameters, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+            }
+        }
+
+
+        //Este metodo sirve para el login 
+
+        public T QuerySingleOrDefault<T>(string query, DynamicParameters parameters)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.QuerySingleOrDefault<T>(query, parameters, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+
+            }
+        }
+
+        //Metodo para obtener un valor especifico de una columna en especifico
+
+        public string QueryString(string query)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.QuerySingle(query, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+
+            }
+        }
+
+        //Para poder recibir parametros
+        public string QueryString(string query, DynamicParameters parameters)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.QuerySingle(query, parameters, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+
+            }
+        }
+
+
+        public IEnumerable<T> Query<T>(string query)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.Query<T>(query, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+
+            }
+        }
+
+        public IEnumerable<T> Query<T>(string query, DynamicParameters parameters)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.Query<T>(query, parameters, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+
+            }
+        }
+
+
+        public int Execute(string query, DynamicParameters parameters)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return con.Execute(query, parameters, commandType: CommandType.StoredProcedure, commandTimeout: 300);
+
+            }
+        }
+
+        public int Insert(string query, DynamicParameters parameters, string fieldName)
+        {
+            using (var con = new SqlConnection(conString))
+            {
+                return (int)((IDictionary<string, object>)con.QuerySingle(query, parameters, commandType: CommandType.StoredProcedure, commandTimeout: 300))[fieldName];
+
+            }
         }
         #endregion
+
+
     }
 }
 
