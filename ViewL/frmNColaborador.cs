@@ -185,7 +185,7 @@ namespace ViewL
                 MessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
                 return;
-            }
+            }   
         }
 
         private void txtSueldo_KeyPress(object sender, KeyPressEventArgs e)
