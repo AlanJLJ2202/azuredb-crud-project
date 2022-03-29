@@ -57,10 +57,6 @@
       <Project>{421ac9ba-c353-471a-a493-fa475566f33e}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PV_Dev\PV_Dev.csproj">
-      <Project>{83caca57-4d58-4396-b617-11ae98d262cf}</Project>
-      <Name>PV_Dev</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

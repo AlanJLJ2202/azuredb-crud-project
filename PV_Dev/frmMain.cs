@@ -23,5 +23,46 @@ namespace PV_Dev
         {
 
         }
+
+        private void btnUsuario_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmUsuario))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmUsuario { MdiParent = this }.Show();
+        }
+
+        private void btnSalir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnSucursal_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmSucursal))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmSucursal { MdiParent = this }.Show();
+        }
+
+        private void btnSocio_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmSocio))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmSocio { MdiParent = this }.Show();
+        }
     }
 }

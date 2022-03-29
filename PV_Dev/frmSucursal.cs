@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DAL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,12 @@ namespace PV_Dev
         public frmSucursal()
         {
             InitializeComponent();
+        }
+
+        private void frmSucursal_Load(object sender, EventArgs e)
+        {
+            sucursalBindingSource.DataSource = new Sucursal().GetAll();
+            gvSucursal.BestFitColumns();
         }
     }
 }

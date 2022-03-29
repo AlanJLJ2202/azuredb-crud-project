@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DAL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,12 @@ namespace PV_Dev
         public frmUsuario()
         {
             InitializeComponent();
+        }
+
+        private void frmUsuario_Load(object sender, EventArgs e)
+        {
+            usuarioBindingSource.DataSource = new Usuario().GetAll();
+            gvUsuarios.BestFitColumns();
         }
     }
 }

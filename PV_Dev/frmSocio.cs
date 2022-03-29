@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DAL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,12 @@ namespace PV_Dev
         public frmSocio()
         {
             InitializeComponent();
+        }
+
+        private void frmSocio_Load(object sender, EventArgs e)
+        {
+            socioBindingSource.DataSource = new Socio().GetAll();
+            gvSocio.BestFitColumns();
         }
     }
 }

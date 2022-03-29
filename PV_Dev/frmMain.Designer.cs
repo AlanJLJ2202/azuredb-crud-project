@@ -32,21 +32,22 @@ namespace PV_Dev
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
-            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
             this.btnCerrar = new DevExpress.XtraBars.BarButtonItem();
             this.btnSalir = new DevExpress.XtraBars.BarButtonItem();
+            this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
             this.btnSocio = new DevExpress.XtraBars.BarButtonItem();
             this.btnColaborador = new DevExpress.XtraBars.BarButtonItem();
             this.btnAhorro = new DevExpress.XtraBars.BarButtonItem();
             this.btnPrestamo = new DevExpress.XtraBars.BarButtonItem();
             this.btnArea = new DevExpress.XtraBars.BarButtonItem();
             this.btnSucursal = new DevExpress.XtraBars.BarButtonItem();
+            this.btnUsuario = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -72,8 +73,112 @@ namespace PV_Dev
             this.btnAhorro,
             this.btnPrestamo,
             this.btnArea,
-            this.btnSucursal});
-            this.barManager1.MaxItemId = 10;
+            this.btnSucursal,
+            this.btnUsuario});
+            this.barManager1.MaxItemId = 11;
+            // 
+            // bar1
+            // 
+            this.bar1.BarName = "Herramientas";
+            this.bar1.DockCol = 0;
+            this.bar1.DockRow = 0;
+            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.Text = "Herramientas";
+            // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "Archivo";
+            this.barSubItem1.Id = 0;
+            this.barSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem1.ImageOptions.SvgImage")));
+            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnCerrar),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnSalir)});
+            this.barSubItem1.Name = "barSubItem1";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Caption = "Cerrar Sesión";
+            this.btnCerrar.Id = 2;
+            this.btnCerrar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCerrar.ImageOptions.SvgImage")));
+            this.btnCerrar.Name = "btnCerrar";
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Caption = "Salir";
+            this.btnSalir.Id = 3;
+            this.btnSalir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSalir.ImageOptions.SvgImage")));
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSalir_ItemClick);
+            // 
+            // barSubItem2
+            // 
+            this.barSubItem2.Caption = "Catalogo";
+            this.barSubItem2.Id = 1;
+            this.barSubItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem2.ImageOptions.SvgImage")));
+            this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSocio, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnColaborador, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnAhorro, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPrestamo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnArea, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSucursal, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnUsuario, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.barSubItem2.Name = "barSubItem2";
+            // 
+            // btnSocio
+            // 
+            this.btnSocio.Caption = "Socios";
+            this.btnSocio.Id = 4;
+            this.btnSocio.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSocio.ImageOptions.SvgImage")));
+            this.btnSocio.Name = "btnSocio";
+            this.btnSocio.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSocio_ItemClick);
+            // 
+            // btnColaborador
+            // 
+            this.btnColaborador.Caption = "Colaborador";
+            this.btnColaborador.Id = 5;
+            this.btnColaborador.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnColaborador.ImageOptions.SvgImage")));
+            this.btnColaborador.Name = "btnColaborador";
+            // 
+            // btnAhorro
+            // 
+            this.btnAhorro.Caption = "Ahorro";
+            this.btnAhorro.Id = 6;
+            this.btnAhorro.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAhorro.ImageOptions.SvgImage")));
+            this.btnAhorro.Name = "btnAhorro";
+            // 
+            // btnPrestamo
+            // 
+            this.btnPrestamo.Caption = "Prestamo";
+            this.btnPrestamo.Id = 7;
+            this.btnPrestamo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrestamo.ImageOptions.SvgImage")));
+            this.btnPrestamo.Name = "btnPrestamo";
+            // 
+            // btnArea
+            // 
+            this.btnArea.Caption = "Area";
+            this.btnArea.Id = 8;
+            this.btnArea.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnArea.ImageOptions.SvgImage")));
+            this.btnArea.Name = "btnArea";
+            // 
+            // btnSucursal
+            // 
+            this.btnSucursal.Caption = "Sucursal";
+            this.btnSucursal.Id = 9;
+            this.btnSucursal.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSucursal.ImageOptions.SvgImage")));
+            this.btnSucursal.Name = "btnSucursal";
+            this.btnSucursal.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSucursal_ItemClick);
+            // 
+            // btnUsuario
+            // 
+            this.btnUsuario.Caption = "Usuario";
+            this.btnUsuario.Id = 10;
+            this.btnUsuario.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnUsuario.ImageOptions.SvgImage")));
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUsuario_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -106,96 +211,6 @@ namespace PV_Dev
             this.barDockControlRight.Location = new System.Drawing.Point(808, 31);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 547);
-            // 
-            // bar1
-            // 
-            this.bar1.BarName = "Herramientas";
-            this.bar1.DockCol = 0;
-            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
-            this.bar1.Text = "Herramientas";
-            // 
-            // barSubItem1
-            // 
-            this.barSubItem1.Caption = "Archivo";
-            this.barSubItem1.Id = 0;
-            this.barSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem1.ImageOptions.SvgImage")));
-            this.barSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnCerrar),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSalir)});
-            this.barSubItem1.Name = "barSubItem1";
-            // 
-            // barSubItem2
-            // 
-            this.barSubItem2.Caption = "Catalogo";
-            this.barSubItem2.Id = 1;
-            this.barSubItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barSubItem2.ImageOptions.SvgImage")));
-            this.barSubItem2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSocio, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnColaborador, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnAhorro, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPrestamo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnArea, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnSucursal, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
-            this.barSubItem2.Name = "barSubItem2";
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Caption = "Cerrar Sesión";
-            this.btnCerrar.Id = 2;
-            this.btnCerrar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.btnCerrar.Name = "btnCerrar";
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Caption = "Salir";
-            this.btnSalir.Id = 3;
-            this.btnSalir.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
-            this.btnSalir.Name = "btnSalir";
-            // 
-            // btnSocio
-            // 
-            this.btnSocio.Caption = "Socios";
-            this.btnSocio.Id = 4;
-            this.btnSocio.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSocio.ImageOptions.SvgImage")));
-            this.btnSocio.Name = "btnSocio";
-            // 
-            // btnColaborador
-            // 
-            this.btnColaborador.Caption = "Colaborador";
-            this.btnColaborador.Id = 5;
-            this.btnColaborador.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnColaborador.ImageOptions.SvgImage")));
-            this.btnColaborador.Name = "btnColaborador";
-            // 
-            // btnAhorro
-            // 
-            this.btnAhorro.Caption = "Ahorro";
-            this.btnAhorro.Id = 6;
-            this.btnAhorro.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
-            this.btnAhorro.Name = "btnAhorro";
-            // 
-            // btnPrestamo
-            // 
-            this.btnPrestamo.Caption = "Prestamo";
-            this.btnPrestamo.Id = 7;
-            this.btnPrestamo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
-            this.btnPrestamo.Name = "btnPrestamo";
-            // 
-            // btnArea
-            // 
-            this.btnArea.Caption = "Area";
-            this.btnArea.Id = 8;
-            this.btnArea.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem7.ImageOptions.SvgImage")));
-            this.btnArea.Name = "btnArea";
-            // 
-            // btnSucursal
-            // 
-            this.btnSucursal.Caption = "Sucursal";
-            this.btnSucursal.Id = 9;
-            this.btnSucursal.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.btnSucursal.Name = "btnSucursal";
             // 
             // xtraTabbedMdiManager1
             // 
@@ -246,5 +261,6 @@ namespace PV_Dev
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private DevExpress.XtraBars.BarButtonItem btnUsuario;
     }
 }

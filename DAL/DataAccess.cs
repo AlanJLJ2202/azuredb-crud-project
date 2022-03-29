@@ -15,7 +15,7 @@ namespace DAL
 
         private static volatile DataAccess instance = null;
         private static readonly object padlock = new object();
-        public static string conString = "Data Source = localhost; Initial Catalog = Pacs; Integrated Security = true";
+        public static string conString = "Data Source = localhost; Initial Catalog = Pacs1P; Integrated Security = true";
         public string InitialCatalog = "";
         public string DataSource = "";
         public string UserID = "";
