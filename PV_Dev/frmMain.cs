@@ -64,5 +64,10 @@ namespace PV_Dev
                 }
             new frmSocio { MdiParent = this }.Show();
         }
+
+        private void btnCerrar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            
+        }
     }
 }

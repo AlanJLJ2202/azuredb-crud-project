@@ -104,6 +104,7 @@ namespace PV_Dev
             this.btnCerrar.Id = 2;
             this.btnCerrar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCerrar.ImageOptions.SvgImage")));
             this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCerrar_ItemClick);
             // 
             // btnSalir
             // 

@@ -42,8 +42,8 @@ namespace PV_Dev
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.gcSucursal = new DevExpress.XtraGrid.GridControl();
-            this.gvSucursal = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.sucursalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvSucursal = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colidSucursal = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colnombre = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldireccion = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -51,12 +51,13 @@ namespace PV_Dev
             this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcSucursal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvSucursal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSucursal)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
             // 
+            this.barManager1.AllowQuickCustomization = false;
             this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
             this.bar1});
             this.barManager1.DockControls.Add(this.barDockControlTop);
@@ -157,6 +158,10 @@ namespace PV_Dev
             this.gcSucursal.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSucursal});
             // 
+            // sucursalBindingSource
+            // 
+            this.sucursalBindingSource.DataSource = typeof(DAL.Sucursal);
+            // 
             // gvSucursal
             // 
             this.gvSucursal.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -167,12 +172,10 @@ namespace PV_Dev
             this.colactivo});
             this.gvSucursal.GridControl = this.gcSucursal;
             this.gvSucursal.Name = "gvSucursal";
+            this.gvSucursal.OptionsBehavior.Editable = false;
             this.gvSucursal.OptionsView.ColumnAutoWidth = false;
+            this.gvSucursal.OptionsView.ShowAutoFilterRow = true;
             this.gvSucursal.OptionsView.ShowGroupPanel = false;
-            // 
-            // sucursalBindingSource
-            // 
-            this.sucursalBindingSource.DataSource = typeof(DAL.Sucursal);
             // 
             // colidSucursal
             // 
@@ -237,8 +240,8 @@ namespace PV_Dev
             this.Load += new System.EventHandler(this.frmSucursal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcSucursal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvSucursal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvSucursal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
