@@ -17,5 +17,10 @@ namespace PV_Dev
         {
             InitializeComponent();
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

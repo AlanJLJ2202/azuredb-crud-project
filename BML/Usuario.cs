@@ -58,5 +58,13 @@ namespace DAL
             return dataAccess.QuerySingle<Usuario>("stp_usuarios_getbyid", parameters);
         }
 
+        public Usuario Login() 
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@nombre", nombre);
+            parameters.Add("@password", password);
+            return dataAccess.QuerySingle<Usuario>("stp_usuarios_login", parameters);
+        }
+
     }
 }

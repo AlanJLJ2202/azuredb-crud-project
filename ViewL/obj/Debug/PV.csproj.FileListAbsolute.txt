@@ -30,3 +30,23 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\ViewL\obj\Debug\PV.csproj.CoreCompile
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\ViewL\obj\Debug\PV.csproj.CopyComplete
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.exe
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\PV.csproj.AssemblyReference.cache
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmAhorros.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmAreas.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmColaboradores.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmLogin.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmMain.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNAhorro.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNArea.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNColaborador.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNPrestamo.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNSocio.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNSucursal.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmNUsuario.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmPrestamo.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmSocio.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmSucursal.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.frmUsuario.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\ViewL.Properties.Resources.resources
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\PV.csproj.GenerateResource.cache
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\ViewL\obj\Debug\PV.csproj.CoreCompileInputs.cache

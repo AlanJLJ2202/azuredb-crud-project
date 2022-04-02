@@ -56,6 +56,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAhorro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAhorro.Designer.cs">
+      <DependentUpon>frmAhorro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArea.Designer.cs">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborador.Designer.cs">
+      <DependentUpon>frmColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +85,12 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrestamo.Designer.cs">
+      <DependentUpon>frmPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSocio.cs">
       <SubType>Form</SubType>
@@ -88,11 +112,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAhorro.resx">
+      <DependentUpon>frmAhorro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArea.resx">
+      <DependentUpon>frmArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborador.resx">
+      <DependentUpon>frmColaborador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrestamo.resx">
+      <DependentUpon>frmPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSocio.resx">
       <DependentUpon>frmSocio.cs</DependentUpon>
@@ -114,6 +150,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="App.config" />
+    <None Include="Properties\DataSources\DAL.Ahorro.datasource" />
+    <None Include="Properties\DataSources\DAL.Area.datasource" />
+    <None Include="Properties\DataSources\DAL.Colaborador.datasource" />
+    <None Include="Properties\DataSources\DAL.Prestamo.datasource" />
     <None Include="Properties\DataSources\DAL.Socio.datasource" />
     <None Include="Properties\DataSources\DAL.Sucursal.datasource" />
     <None Include="Properties\DataSources\DAL.Usuario.datasource" />

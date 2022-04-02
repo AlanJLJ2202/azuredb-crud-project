@@ -119,41 +119,47 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(618, 30);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(795, 34);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 439);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 521);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(618, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(795, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 409);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 487);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(618, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(795, 34);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 409);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 487);
             // 
             // gcSucursal
             // 
             this.gcSucursal.DataSource = this.sucursalBindingSource;
             this.gcSucursal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcSucursal.Location = new System.Drawing.Point(0, 30);
+            this.gcSucursal.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcSucursal.Location = new System.Drawing.Point(0, 34);
             this.gcSucursal.MainView = this.gvSucursal;
+            this.gcSucursal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gcSucursal.MenuManager = this.barManager1;
             this.gcSucursal.Name = "gcSucursal";
-            this.gcSucursal.Size = new System.Drawing.Size(618, 409);
+            this.gcSucursal.Size = new System.Drawing.Size(795, 487);
             this.gcSucursal.TabIndex = 4;
             this.gcSucursal.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSucursal});
@@ -170,6 +176,7 @@ namespace PV_Dev
             this.coldireccion,
             this.coltelefono,
             this.colactivo});
+            this.gvSucursal.DetailHeight = 416;
             this.gvSucursal.GridControl = this.gcSucursal;
             this.gvSucursal.Name = "gvSucursal";
             this.gvSucursal.OptionsBehavior.Editable = false;
@@ -181,61 +188,63 @@ namespace PV_Dev
             // 
             this.colidSucursal.Caption = "ID";
             this.colidSucursal.FieldName = "idSucursal";
-            this.colidSucursal.MinWidth = 25;
+            this.colidSucursal.MinWidth = 32;
             this.colidSucursal.Name = "colidSucursal";
             this.colidSucursal.Visible = true;
             this.colidSucursal.VisibleIndex = 0;
-            this.colidSucursal.Width = 94;
+            this.colidSucursal.Width = 121;
             // 
             // colnombre
             // 
             this.colnombre.Caption = "Sucursal";
             this.colnombre.FieldName = "nombre";
-            this.colnombre.MinWidth = 25;
+            this.colnombre.MinWidth = 32;
             this.colnombre.Name = "colnombre";
             this.colnombre.Visible = true;
             this.colnombre.VisibleIndex = 1;
-            this.colnombre.Width = 94;
+            this.colnombre.Width = 121;
             // 
             // coldireccion
             // 
             this.coldireccion.Caption = "Dirección";
             this.coldireccion.FieldName = "direccion";
-            this.coldireccion.MinWidth = 25;
+            this.coldireccion.MinWidth = 32;
             this.coldireccion.Name = "coldireccion";
             this.coldireccion.Visible = true;
             this.coldireccion.VisibleIndex = 2;
-            this.coldireccion.Width = 94;
+            this.coldireccion.Width = 121;
             // 
             // coltelefono
             // 
             this.coltelefono.Caption = "Telefono";
             this.coltelefono.FieldName = "telefono";
-            this.coltelefono.MinWidth = 25;
+            this.coltelefono.MinWidth = 32;
             this.coltelefono.Name = "coltelefono";
             this.coltelefono.Visible = true;
             this.coltelefono.VisibleIndex = 3;
-            this.coltelefono.Width = 94;
+            this.coltelefono.Width = 121;
             // 
             // colactivo
             // 
             this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 25;
+            this.colactivo.MinWidth = 32;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 94;
+            this.colactivo.Width = 121;
             // 
             // frmSucursal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 439);
+            this.ClientSize = new System.Drawing.Size(795, 521);
             this.Controls.Add(this.gcSucursal);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmSucursal.IconOptions.SvgImage")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmSucursal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sucursal";
             this.Load += new System.EventHandler(this.frmSucursal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

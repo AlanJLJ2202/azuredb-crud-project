@@ -7,3 +7,5 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.CoreCompileI
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.CopyComplete
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BOL\obj\Debug\BOL.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.AssemblyReference.cache
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BOL\obj\Debug\BOL.csproj.CoreCompileInputs.cache

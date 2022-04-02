@@ -118,41 +118,47 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(699, 30);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(899, 34);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 486);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 577);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(699, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(899, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 456);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 543);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(699, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(899, 34);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 456);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 543);
             // 
             // gcUsuarios
             // 
             this.gcUsuarios.DataSource = this.usuarioBindingSource;
             this.gcUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcUsuarios.Location = new System.Drawing.Point(0, 30);
+            this.gcUsuarios.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gcUsuarios.Location = new System.Drawing.Point(0, 34);
             this.gcUsuarios.MainView = this.gvUsuarios;
+            this.gcUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gcUsuarios.MenuManager = this.barManager1;
             this.gcUsuarios.Name = "gcUsuarios";
-            this.gcUsuarios.Size = new System.Drawing.Size(699, 456);
+            this.gcUsuarios.Size = new System.Drawing.Size(899, 543);
             this.gcUsuarios.TabIndex = 4;
             this.gcUsuarios.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvUsuarios});
@@ -168,6 +174,7 @@ namespace PV_Dev
             this.colnombre,
             this.colpassword,
             this.colactivo});
+            this.gvUsuarios.DetailHeight = 416;
             this.gvUsuarios.GridControl = this.gcUsuarios;
             this.gvUsuarios.Name = "gvUsuarios";
             this.gvUsuarios.OptionsBehavior.Editable = false;
@@ -179,51 +186,53 @@ namespace PV_Dev
             // 
             this.colidUsuario.Caption = "ID";
             this.colidUsuario.FieldName = "idUsuario";
-            this.colidUsuario.MinWidth = 25;
+            this.colidUsuario.MinWidth = 32;
             this.colidUsuario.Name = "colidUsuario";
             this.colidUsuario.Visible = true;
             this.colidUsuario.VisibleIndex = 0;
-            this.colidUsuario.Width = 94;
+            this.colidUsuario.Width = 121;
             // 
             // colnombre
             // 
             this.colnombre.Caption = "Usuario";
             this.colnombre.FieldName = "nombre";
-            this.colnombre.MinWidth = 25;
+            this.colnombre.MinWidth = 32;
             this.colnombre.Name = "colnombre";
             this.colnombre.Visible = true;
             this.colnombre.VisibleIndex = 1;
-            this.colnombre.Width = 94;
+            this.colnombre.Width = 121;
             // 
             // colpassword
             // 
             this.colpassword.Caption = "Contraseña";
             this.colpassword.FieldName = "password";
-            this.colpassword.MinWidth = 25;
+            this.colpassword.MinWidth = 32;
             this.colpassword.Name = "colpassword";
             this.colpassword.Visible = true;
             this.colpassword.VisibleIndex = 2;
-            this.colpassword.Width = 94;
+            this.colpassword.Width = 121;
             // 
             // colactivo
             // 
             this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 25;
+            this.colactivo.MinWidth = 32;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 94;
+            this.colactivo.Width = 121;
             // 
             // frmUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 486);
+            this.ClientSize = new System.Drawing.Size(899, 577);
             this.Controls.Add(this.gcUsuarios);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmUsuario.IconOptions.SvgImage")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

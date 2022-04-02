@@ -6,3 +6,12 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\DAL\obj\Debug\DAL.pdb
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\DAL\bin\Debug\Dapper.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\DAL\bin\Debug\Dapper.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\bin\Debug\DAL.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\bin\Debug\DAL.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\bin\Debug\Dapper.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\bin\Debug\Dapper.xml
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

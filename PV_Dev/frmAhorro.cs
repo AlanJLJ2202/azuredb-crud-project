@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DAL;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,13 @@ namespace PV_Dev
         public frmAhorro()
         {
             InitializeComponent();
+        }
+
+        private void frmAhorro_Load(object sender, EventArgs e)
+        {
+            socioBindingSource.DataSource = new Socio().GetAll();
+            ahorroBindingSource.DataSource = new Ahorro().GetAll();
+            gvAhorro.BestFitColumns();
         }
     }
 }

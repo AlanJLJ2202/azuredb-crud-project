@@ -9,3 +9,14 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BML\obj\Debug\BML.csproj.CoreCompileI
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BML\obj\Debug\BML.csproj.CopyComplete
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BML\obj\Debug\BML.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\BML\obj\Debug\BML.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\bin\Debug\BML.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\bin\Debug\BML.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\bin\Debug\DAL.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\bin\Debug\Dapper.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\bin\Debug\DAL.pdb
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\bin\Debug\Dapper.xml
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\obj\Debug\BML.csproj.AssemblyReference.cache
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\obj\Debug\BML.csproj.CoreCompileInputs.cache
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\obj\Debug\BML.csproj.CopyComplete
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\obj\Debug\BML.dll
+C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\BML\obj\Debug\BML.pdb
