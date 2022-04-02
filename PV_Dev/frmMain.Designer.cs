@@ -143,6 +143,7 @@ namespace PV_Dev
             this.btnColaborador.Id = 5;
             this.btnColaborador.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnColaborador.ImageOptions.SvgImage")));
             this.btnColaborador.Name = "btnColaborador";
+            this.btnColaborador.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnColaborador_ItemClick);
             // 
             // btnAhorro
             // 
@@ -150,6 +151,7 @@ namespace PV_Dev
             this.btnAhorro.Id = 6;
             this.btnAhorro.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAhorro.ImageOptions.SvgImage")));
             this.btnAhorro.Name = "btnAhorro";
+            this.btnAhorro.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAhorro_ItemClick);
             // 
             // btnPrestamo
             // 
@@ -157,6 +159,7 @@ namespace PV_Dev
             this.btnPrestamo.Id = 7;
             this.btnPrestamo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrestamo.ImageOptions.SvgImage")));
             this.btnPrestamo.Name = "btnPrestamo";
+            this.btnPrestamo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrestamo_ItemClick);
             // 
             // btnArea
             // 
@@ -164,6 +167,7 @@ namespace PV_Dev
             this.btnArea.Id = 8;
             this.btnArea.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnArea.ImageOptions.SvgImage")));
             this.btnArea.Name = "btnArea";
+            this.btnArea.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnArea_ItemClick);
             // 
             // btnSucursal
             // 
@@ -187,7 +191,7 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(808, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(808, 35);
             // 
             // barDockControlBottom
             // 
@@ -201,17 +205,17 @@ namespace PV_Dev
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 35);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 547);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 543);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(808, 31);
+            this.barDockControlRight.Location = new System.Drawing.Point(808, 35);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 547);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 543);
             // 
             // xtraTabbedMdiManager1
             // 

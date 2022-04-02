@@ -69,5 +69,53 @@ namespace PV_Dev
         {
             
         }
+
+        private void btnAhorro_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmAhorro))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmAhorro { MdiParent = this }.Show();
+        }
+
+        private void btnArea_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmArea))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmArea { MdiParent = this }.Show();
+        }
+
+        private void btnColaborador_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmColaborador))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmColaborador { MdiParent = this }.Show();
+        }
+
+        private void btnPrestamo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmPrestamo))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmPrestamo { MdiParent = this }.Show();
+        }
     }
 }
