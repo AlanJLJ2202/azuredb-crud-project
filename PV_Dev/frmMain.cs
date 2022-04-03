@@ -67,7 +67,7 @@ namespace PV_Dev
 
         private void btnCerrar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            
+            this.Close();
         }
 
         private void btnAhorro_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

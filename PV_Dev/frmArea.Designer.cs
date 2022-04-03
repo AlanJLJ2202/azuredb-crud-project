@@ -90,6 +90,7 @@ namespace PV_Dev
             this.btnActualizar.Id = 0;
             this.btnActualizar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnActualizar.ImageOptions.SvgImage")));
             this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnActualizar_ItemClick);
             // 
             // btnNuevo
             // 
@@ -97,6 +98,7 @@ namespace PV_Dev
             this.btnNuevo.Id = 1;
             this.btnNuevo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNuevo.ImageOptions.SvgImage")));
             this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNuevo_ItemClick);
             // 
             // btnModificar
             // 
@@ -104,6 +106,7 @@ namespace PV_Dev
             this.btnModificar.Id = 2;
             this.btnModificar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnModificar.ImageOptions.SvgImage")));
             this.btnModificar.Name = "btnModificar";
+            this.btnModificar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModificar_ItemClick);
             // 
             // btnEliminar
             // 

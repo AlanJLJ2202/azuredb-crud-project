@@ -24,5 +24,25 @@ namespace PV_Dev
             areaBindingSource.DataSource = new Area().GetAll();
             gvAreas.BestFitColumns();
         }
+
+        private void btnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new frmNArea { Text = "Nueva area" }.ShowDialog();
+            areaBindingSource.DataSource = new Area().GetAll();
+            gvAreas.BestFitColumns();
+        }
+
+        private void btnModificar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new frmNArea((int)gvAreas.GetFocusedRowCellValue("idArea")) { Text = "Modificar area" }.ShowDialog();
+            areaBindingSource.DataSource = new Area().GetAll();
+            gvAreas.BestFitColumns();
+        }
+
+        private void btnActualizar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            areaBindingSource.DataSource = new Area().GetAll();
+            gvAreas.BestFitColumns();
+        }
     }
 }

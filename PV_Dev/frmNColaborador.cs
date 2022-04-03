@@ -1,5 +1,4 @@
-﻿using DAL;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,16 +11,11 @@ using System.Windows.Forms;
 
 namespace PV_Dev
 {
-    public partial class frmNAhorro : DevExpress.XtraEditors.XtraForm
+    public partial class frmNColaborador : DevExpress.XtraEditors.XtraForm
     {
-        public frmNAhorro()
+        public frmNColaborador()
         {
             InitializeComponent();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-         
         }
     }
 }

@@ -10,6 +10,7 @@ namespace DAL
     public class Socio
     {
         private DataAccess dataAccess = DataAccess.Instance();
+
         public int idSocio { get; set; }
 
         public string nombre { get; set; }

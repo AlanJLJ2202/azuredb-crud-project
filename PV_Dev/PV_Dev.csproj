@@ -92,6 +92,42 @@
     <Compile Include="frmNAhorro.Designer.cs">
       <DependentUpon>frmNAhorro.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNArea.Designer.cs">
+      <DependentUpon>frmNArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNColaborador.Designer.cs">
+      <DependentUpon>frmNColaborador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNPrestamo.Designer.cs">
+      <DependentUpon>frmNPrestamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNSocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNSocio.Designer.cs">
+      <DependentUpon>frmNSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNSucursal.Designer.cs">
+      <DependentUpon>frmNSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNUsuario.Designer.cs">
+      <DependentUpon>frmNUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +171,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNAhorro.resx">
       <DependentUpon>frmNAhorro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNArea.resx">
+      <DependentUpon>frmNArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNColaborador.resx">
+      <DependentUpon>frmNColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNPrestamo.resx">
+      <DependentUpon>frmNPrestamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNSocio.resx">
+      <DependentUpon>frmNSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNSucursal.resx">
+      <DependentUpon>frmNSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNUsuario.resx">
+      <DependentUpon>frmNUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrestamo.resx">
       <DependentUpon>frmPrestamo.cs</DependentUpon>
