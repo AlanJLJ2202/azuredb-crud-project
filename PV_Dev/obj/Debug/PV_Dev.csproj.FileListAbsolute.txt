@@ -212,6 +212,13 @@ C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmArea.resources
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmColaborador.resources
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmPrestamo.resources
+<<<<<<< HEAD
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNAhorro.resources
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNArea.resources
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNColaborador.resources
+=======
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmAhorro.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmArea.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmColaborador.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmPrestamo.resources
+>>>>>>> 0e62cc85f8060d308c7491c5517418c8619348fe
