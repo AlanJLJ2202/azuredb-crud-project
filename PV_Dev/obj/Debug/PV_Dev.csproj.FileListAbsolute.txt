@@ -1,23 +1,43 @@
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\PV_Dev.exe.config
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\PV_Dev.exe
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\PV_Dev.pdb
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\BML.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.BonusSkins.v20.1.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.v20.1.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Printing.v20.1.Core.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Utils.v20.1.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraBars.v20.1.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DAL.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\Dapper.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Office.v20.1.Core.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\BML.pdb
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.v20.1.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Utils.v20.1.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraBars.v20.1.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraEditors.v20.1.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DAL.pdb
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\Dapper.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Office.v20.1.Core.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
@@ -30,6 +50,10 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Sparkl
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
@@ -38,38 +62,6 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Printi
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.AssemblyReference.cache
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.Properties.Resources.resources
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.GenerateResource.cache
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.CoreCompileInputs.cache
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.CopyComplete
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.pdb
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmMain.resources
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraBars.v20.1.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraBars.v20.1.xml
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmLogin.resources
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe.licenses
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraGrid.v20.1.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraLayout.v20.1.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Office.v20.1.Core.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraGrid.v20.1.xml
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraLayout.v20.1.xml
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Office.v20.1.Core.xml
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
@@ -82,6 +74,10 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraPr
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
@@ -94,131 +90,27 @@ C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Office
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmSocio.resources
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmSucursal.resources
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmUsuario.resources
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\BML.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DAL.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\Dapper.dll
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\BML.pdb
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\DAL.pdb
-C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\bin\Debug\Dapper.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\PV_Dev.exe.config
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\PV_Dev.exe
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\PV_Dev.pdb
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\BML.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.BonusSkins.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Printing.v20.1.Core.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Utils.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraBars.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraEditors.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraGrid.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraLayout.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DAL.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\Dapper.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Office.v20.1.Core.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\BML.pdb
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Data.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Utils.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraBars.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraEditors.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Printing.v20.1.Core.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraGrid.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraLayout.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DAL.pdb
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\Dapper.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\DevExpress.Office.v20.1.Core.xml
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.AssemblyReference.cache
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmAhorro.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmLogin.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmMain.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmSocio.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmSucursal.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmUsuario.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.Properties.Resources.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.GenerateResource.cache
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe.licenses
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.CoreCompileInputs.cache
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.CopyComplete
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.pdb
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmArea.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmColaborador.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmPrestamo.resources
-<<<<<<< HEAD
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNAhorro.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNArea.resources
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNColaborador.resources
-=======
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.AssemblyReference.cache
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmAhorro.resources
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmArea.resources
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmColaborador.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmLogin.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmMain.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNAhorro.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNArea.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNColaborador.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNPrestamo.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNSocio.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNSucursal.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNUsuario.resources
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmPrestamo.resources
->>>>>>> 0e62cc85f8060d308c7491c5517418c8619348fe
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmSocio.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmSucursal.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmUsuario.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.Properties.Resources.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.GenerateResource.cache
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe.licenses
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.CoreCompileInputs.cache
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.csproj.CopyComplete
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.pdb
