@@ -14,6 +14,7 @@ namespace PV_Dev
 {
     public partial class frmArea : DevExpress.XtraEditors.XtraForm
     {
+        private int idArea = 0;
         public frmArea()
         {
             InitializeComponent();
@@ -27,22 +28,53 @@ namespace PV_Dev
 
         private void btnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            new frmNArea { Text = "Nueva area" }.ShowDialog();
-            areaBindingSource.DataSource = new Area().GetAll();
-            gvAreas.BestFitColumns();
+            foreach (Form form in Application.OpenForms)
+
+                if (form.GetType() == typeof(frmNArea))
+                {
+                    form.Activate();
+                    return;
+                }
+            new frmNArea { Text = "Areas" }.Show();
+            btnActualizar.PerformClick();
         }
 
         private void btnModificar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new frmNArea((int)gvAreas.GetFocusedRowCellValue("idArea")) { Text = "Modificar area" }.ShowDialog();
-            areaBindingSource.DataSource = new Area().GetAll();
-            gvAreas.BestFitColumns();
+            btnActualizar.PerformClick();
         }
 
         private void btnActualizar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             areaBindingSource.DataSource = new Area().GetAll();
             gvAreas.BestFitColumns();
+        }
+
+        private void btnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            int idArea = (int)gvAreas.GetFocusedRowCellValue("idArea");
+
+            if (new Area()
+            {
+                idArea = idArea
+            }.Delete() > 0)
+            {
+                XtraMessageBox.Show("Area eliminada correctamente", "Exito",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnActualizar.PerformClick();
+            }
+            else
+                XtraMessageBox.Show("No se eliminó correctamente", "Error 404",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void frmArea_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

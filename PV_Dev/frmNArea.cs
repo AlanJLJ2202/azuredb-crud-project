@@ -18,6 +18,7 @@ namespace PV_Dev
         public frmNArea()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         //crear otro constructor
@@ -25,36 +26,57 @@ namespace PV_Dev
         {
             InitializeComponent();
             this.idArea = idArea;
+            Area area = new Area() { idArea = this.idArea }.GetById();
+            CenterToScreen();
+            txtNombre.Text = area.nombre;
+            txtDescripcion.Text = area.descripcion;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtDescripcion.Text))
+            {
+
+                MessageBox.Show("Debe completar la informacion");
+
+                return;
+
+            }
+
             if (idArea > 0)
             {
-                if (new Area
+                if (new Area()
                 {
-                    idArea = this.idArea,
+                    idArea = idArea,
                     nombre = txtNombre.Text,
                     descripcion = txtDescripcion.Text
                 }.Update() > 0)
                 {
-                    XtraMessageBox.Show("Area Actualizada correctamente", Application.ProductName,
+                    XtraMessageBox.Show("Area actualizada correctamente", "Areas",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Close();
                 }
             }
-            else 
+            else
             {
-                if (new Area
+                if (new Area()
                 {
                     nombre = txtNombre.Text,
                     descripcion = txtDescripcion.Text
-                }.Add() > 0) 
+                }.Add() > 0)
                 {
-                    XtraMessageBox.Show("Area almacenada correctamente", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Close();
+                    XtraMessageBox.Show("Area almacenada correctamente", "Areas",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Clean();
+                    //Close();
                 }
             }
+        }
+
+        public void Clean()
+        {
+            txtNombre.Text = "";
+            txtDescripcion.Text = "";
+            txtNombre.Focus();
         }
     }
 }

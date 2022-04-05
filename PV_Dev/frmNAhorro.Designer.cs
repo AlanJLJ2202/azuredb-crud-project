@@ -29,6 +29,7 @@ namespace PV_Dev
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
@@ -36,12 +37,14 @@ namespace PV_Dev
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.txtMonto = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.cmbSocio = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cmbSocio = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSocio.Properties)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,8 +56,8 @@ namespace PV_Dev
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.txtMonto);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.cmbSocio);
             this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Controls.Add(this.cmbSocio);
             this.groupControl1.Location = new System.Drawing.Point(12, 12);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(276, 272);
@@ -108,15 +111,6 @@ namespace PV_Dev
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Monto:";
             // 
-            // cmbSocio
-            // 
-            this.cmbSocio.Location = new System.Drawing.Point(61, 51);
-            this.cmbSocio.Name = "cmbSocio";
-            this.cmbSocio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbSocio.Size = new System.Drawing.Size(204, 26);
-            this.cmbSocio.TabIndex = 1;
-            // 
             // labelControl1
             // 
             this.labelControl1.Location = new System.Drawing.Point(5, 54);
@@ -124,6 +118,32 @@ namespace PV_Dev
             this.labelControl1.Size = new System.Drawing.Size(44, 19);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Socio:";
+            // 
+            // socioBindingSource
+            // 
+            this.socioBindingSource.DataSource = typeof(DAL.Socio);
+            // 
+            // cmbSocio
+            // 
+            this.cmbSocio.Location = new System.Drawing.Point(61, 51);
+            this.cmbSocio.Name = "cmbSocio";
+            this.cmbSocio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbSocio.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 69, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "Socio", 68, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 68, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 47, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 76, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 90, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 54, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.cmbSocio.Properties.DataSource = this.socioBindingSource;
+            this.cmbSocio.Properties.DisplayMember = "nombre";
+            this.cmbSocio.Properties.NullText = "";
+            this.cmbSocio.Properties.PopupSizeable = false;
+            this.cmbSocio.Properties.ValueMember = "idSocio";
+            this.cmbSocio.Size = new System.Drawing.Size(150, 26);
+            this.cmbSocio.TabIndex = 8;
             // 
             // frmNAhorro
             // 
@@ -133,11 +153,13 @@ namespace PV_Dev
             this.Controls.Add(this.groupControl1);
             this.Name = "frmNAhorro";
             this.Text = "Nuevo Ahorro";
+            this.Load += new System.EventHandler(this.frmNAhorro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSocio.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -152,7 +174,8 @@ namespace PV_Dev
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.TextEdit txtMonto;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LookUpEdit cmbSocio;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private System.Windows.Forms.BindingSource socioBindingSource;
+        private DevExpress.XtraEditors.LookUpEdit cmbSocio;
     }
 }

@@ -14,14 +14,81 @@ namespace PV_Dev
 {
     public partial class frmNAhorro : DevExpress.XtraEditors.XtraForm
     {
+        int idAhorro = 0;
         public frmNAhorro()
         {
             InitializeComponent();
+            CenterToScreen();
+        }
+
+        public frmNAhorro(int idAhorro)
+        {
+            InitializeComponent();
+            this.idAhorro = idAhorro;
+            Ahorro ahorro = new Ahorro() { idAhorro = this.idAhorro }.GetById();
+            CenterToScreen();
+            cmbSocio.EditValue = ahorro.idSocio;
+            txtMonto.Text = ahorro.monto.ToString();
+            txtTasaInteres.Text = ahorro.tasaInteres.ToString();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-         
+            if (string.IsNullOrEmpty(cmbSocio.Text) || string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text))
+            {
+
+                MessageBox.Show("Debe completar la informacion");
+
+                return;
+
+            }
+
+            if (idAhorro > 0)
+            {
+                if (new Ahorro()
+                {
+                    idAhorro = idAhorro,
+                    idSocio = (int) cmbSocio.EditValue,
+                    monto = decimal.Parse(txtMonto.Text),
+                    tasaInteres = decimal.Parse(txtTasaInteres.Text)
+
+                }.Update() > 0)
+                {
+                    XtraMessageBox.Show("Ahorro actualizado correctamente", "Ahorros",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                if (new Ahorro()
+                {
+                    idSocio = (int)cmbSocio.EditValue,
+                    monto = decimal.Parse(txtMonto.Text),
+                    tasaInteres = decimal.Parse(txtTasaInteres.Text)
+
+                }.Add() > 0)
+                {
+                    XtraMessageBox.Show("Ahorro almacenado correctamente", "Ahorros",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Clean();
+
+                    //Close();
+                }
+            }
+        }
+
+        public void Clean()
+        {
+            cmbSocio.EditValue = "";
+            txtMonto.Text = "";
+            txtTasaInteres.Text = "";
+            txtMonto.Focus();
+        }
+
+        private void frmNAhorro_Load(object sender, EventArgs e)
+        {
+            socioBindingSource.DataSource = new Socio().GetAll();
+            CenterToScreen();
         }
     }
 }
