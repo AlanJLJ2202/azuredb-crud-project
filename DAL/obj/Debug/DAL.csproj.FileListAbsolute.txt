@@ -14,5 +14,4 @@ C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.cs
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.dll
 C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.pdb
-C:\Users\Mario\Desktop\Proyecto 2ParcialPacs\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

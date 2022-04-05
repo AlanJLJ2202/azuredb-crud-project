@@ -29,7 +29,7 @@ namespace DAL
             parameters.Add("@nombre", nombre);
             parameters.Add("@apellido", apellido);
             parameters.Add("@edad", edad);
-            parameters.Add("@direcccion", direccion);
+            parameters.Add("@direccion", direccion);
             parameters.Add("@sueldo", sueldo);
             parameters.Add("@idArea", idArea);
             parameters.Add("@idSucursal", idSucursal);

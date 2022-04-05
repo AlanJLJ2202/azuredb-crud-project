@@ -95,6 +95,7 @@ namespace PV_Dev
             this.btnActualizar.Id = 0;
             this.btnActualizar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnActualizar.ImageOptions.SvgImage")));
             this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnActualizar_ItemClick);
             // 
             // btnNuevo
             // 
@@ -102,6 +103,7 @@ namespace PV_Dev
             this.btnNuevo.Id = 1;
             this.btnNuevo.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnNuevo.ImageOptions.SvgImage")));
             this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNuevo_ItemClick);
             // 
             // btnModificar
             // 
@@ -109,6 +111,7 @@ namespace PV_Dev
             this.btnModificar.Id = 2;
             this.btnModificar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnModificar.ImageOptions.SvgImage")));
             this.btnModificar.Name = "btnModificar";
+            this.btnModificar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModificar_ItemClick);
             // 
             // btnEliminar
             // 
@@ -116,6 +119,7 @@ namespace PV_Dev
             this.btnEliminar.Id = 3;
             this.btnEliminar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnEliminar.ImageOptions.SvgImage")));
             this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEliminar_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -185,7 +189,7 @@ namespace PV_Dev
             this.gvAhorro.Name = "gvAhorro";
             this.gvAhorro.OptionsBehavior.Editable = false;
             this.gvAhorro.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
-            this.gvAhorro.OptionsView.ShowAutoFilterRow = true;
+            this.gvAhorro.OptionsView.ColumnAutoWidth = false;
             this.gvAhorro.OptionsView.ShowGroupPanel = false;
             // 
             // colidAhorro
@@ -270,6 +274,7 @@ namespace PV_Dev
             this.Name = "frmAhorro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorro";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAhorro_FormClosing);
             this.Load += new System.EventHandler(this.frmAhorro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcAhorro)).EndInit();
