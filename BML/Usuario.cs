@@ -63,7 +63,7 @@ namespace DAL
             var parameters = new DynamicParameters();
             parameters.Add("@nombre", nombre);
             parameters.Add("@password", password);
-            return dataAccess.QuerySingle<Usuario>("stp_usuarios_login", parameters);
+            return dataAccess.QuerySingleOrDefault<Usuario>("stp_usuarios_login", parameters);
         }
 
     }

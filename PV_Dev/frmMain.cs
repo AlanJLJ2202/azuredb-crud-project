@@ -117,5 +117,13 @@ namespace PV_Dev
                 }
             new frmPrestamo { MdiParent = this }.Show();
         }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            //{
+             //   e.Cancel = true;
+            //}
+        }
     }
 }

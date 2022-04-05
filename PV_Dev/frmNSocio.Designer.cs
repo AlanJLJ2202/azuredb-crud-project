@@ -116,6 +116,7 @@ namespace PV_Dev
             this.txtEdad.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEdad.Size = new System.Drawing.Size(173, 22);
             this.txtEdad.TabIndex = 3;
+            this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
             // 
             // txtApellido
             // 
@@ -125,6 +126,7 @@ namespace PV_Dev
             this.txtApellido.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtApellido.Size = new System.Drawing.Size(173, 22);
             this.txtApellido.TabIndex = 2;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtNombre
             // 
@@ -134,6 +136,7 @@ namespace PV_Dev
             this.txtNombre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtNombre.Size = new System.Drawing.Size(173, 22);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // labelControl5
             // 

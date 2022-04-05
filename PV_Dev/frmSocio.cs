@@ -15,7 +15,7 @@ namespace PV_Dev
     public partial class frmSocio : DevExpress.XtraEditors.XtraForm
     {
 
-        private int idSocio = 0;
+        
         public frmSocio()
         {
             InitializeComponent();
@@ -42,9 +42,11 @@ namespace PV_Dev
                 {
                     form.Activate();
                     return;
+                    
                 }
-            new frmNSocio { Text = "Socios" }.Show();
             btnActualizar.PerformClick();
+            new frmNSocio { Text = "Socios" }.Show();
+            
         }
 
         private void btnModificar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
