@@ -95,6 +95,7 @@ namespace PV_Dev
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnNuevo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnModificar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnEliminar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.OptionsBar.DrawDragBorder = false;
             this.bar1.Text = "Herramientas";
             // 
             // btnActualizar
@@ -135,35 +136,31 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(666, 34);
+            this.barDockControlTop.Size = new System.Drawing.Size(605, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 339);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 410);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(666, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(605, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 305);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 380);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(666, 34);
+            this.barDockControlRight.Location = new System.Drawing.Point(605, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 305);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 380);
             // 
             // gcColaborador
             // 
@@ -173,14 +170,16 @@ namespace PV_Dev
             this.gcColaborador.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
             this.gcColaborador.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gcColaborador.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
-            this.gcColaborador.Location = new System.Drawing.Point(0, 34);
+            this.gcColaborador.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.gcColaborador.Location = new System.Drawing.Point(0, 30);
             this.gcColaborador.MainView = this.gvColaborador;
+            this.gcColaborador.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gcColaborador.MenuManager = this.barManager1;
             this.gcColaborador.Name = "gcColaborador";
             this.gcColaborador.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rlupArea,
             this.rlupSucursal});
-            this.gcColaborador.Size = new System.Drawing.Size(666, 305);
+            this.gcColaborador.Size = new System.Drawing.Size(605, 380);
             this.gcColaborador.TabIndex = 4;
             this.gcColaborador.UseEmbeddedNavigator = true;
             this.gcColaborador.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -202,76 +201,92 @@ namespace PV_Dev
             this.colidArea,
             this.colidSucursal,
             this.colactivo});
+            this.gvColaborador.DetailHeight = 295;
             this.gvColaborador.GridControl = this.gcColaborador;
             this.gvColaborador.Name = "gvColaborador";
             this.gvColaborador.OptionsBehavior.Editable = false;
             this.gvColaborador.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
+            this.gvColaborador.OptionsView.ColumnAutoWidth = false;
             this.gvColaborador.OptionsView.ShowAutoFilterRow = true;
             this.gvColaborador.OptionsView.ShowGroupPanel = false;
             // 
             // colidColaborador
             // 
+            this.colidColaborador.Caption = "ID";
             this.colidColaborador.FieldName = "idColaborador";
-            this.colidColaborador.MinWidth = 30;
+            this.colidColaborador.MinWidth = 23;
             this.colidColaborador.Name = "colidColaborador";
+            this.colidColaborador.OptionsColumn.AllowMove = false;
             this.colidColaborador.Visible = true;
             this.colidColaborador.VisibleIndex = 0;
-            this.colidColaborador.Width = 112;
+            this.colidColaborador.Width = 87;
             // 
             // colnombre
             // 
+            this.colnombre.Caption = "Colaborador";
             this.colnombre.FieldName = "nombre";
-            this.colnombre.MinWidth = 30;
+            this.colnombre.MinWidth = 23;
             this.colnombre.Name = "colnombre";
+            this.colnombre.OptionsColumn.AllowMove = false;
             this.colnombre.Visible = true;
             this.colnombre.VisibleIndex = 1;
-            this.colnombre.Width = 112;
+            this.colnombre.Width = 87;
             // 
             // colapellido
             // 
+            this.colapellido.Caption = "Apellido";
             this.colapellido.FieldName = "apellido";
-            this.colapellido.MinWidth = 30;
+            this.colapellido.MinWidth = 23;
             this.colapellido.Name = "colapellido";
+            this.colapellido.OptionsColumn.AllowMove = false;
             this.colapellido.Visible = true;
             this.colapellido.VisibleIndex = 2;
-            this.colapellido.Width = 112;
+            this.colapellido.Width = 87;
             // 
             // coledad
             // 
+            this.coledad.Caption = "Edad";
             this.coledad.FieldName = "edad";
-            this.coledad.MinWidth = 30;
+            this.coledad.MinWidth = 23;
             this.coledad.Name = "coledad";
+            this.coledad.OptionsColumn.AllowMove = false;
             this.coledad.Visible = true;
             this.coledad.VisibleIndex = 3;
-            this.coledad.Width = 112;
+            this.coledad.Width = 87;
             // 
             // coldireccion
             // 
+            this.coldireccion.Caption = "Direccion";
             this.coldireccion.FieldName = "direccion";
-            this.coldireccion.MinWidth = 30;
+            this.coldireccion.MinWidth = 23;
             this.coldireccion.Name = "coldireccion";
+            this.coldireccion.OptionsColumn.AllowMove = false;
             this.coldireccion.Visible = true;
             this.coldireccion.VisibleIndex = 4;
-            this.coldireccion.Width = 112;
+            this.coldireccion.Width = 87;
             // 
             // colsueldo
             // 
+            this.colsueldo.Caption = "Sueldo";
             this.colsueldo.FieldName = "sueldo";
-            this.colsueldo.MinWidth = 30;
+            this.colsueldo.MinWidth = 23;
             this.colsueldo.Name = "colsueldo";
+            this.colsueldo.OptionsColumn.AllowMove = false;
             this.colsueldo.Visible = true;
             this.colsueldo.VisibleIndex = 5;
-            this.colsueldo.Width = 112;
+            this.colsueldo.Width = 87;
             // 
             // colidArea
             // 
+            this.colidArea.Caption = "Area";
             this.colidArea.ColumnEdit = this.rlupArea;
             this.colidArea.FieldName = "idArea";
-            this.colidArea.MinWidth = 30;
+            this.colidArea.MinWidth = 23;
             this.colidArea.Name = "colidArea";
+            this.colidArea.OptionsColumn.AllowMove = false;
             this.colidArea.Visible = true;
             this.colidArea.VisibleIndex = 6;
-            this.colidArea.Width = 112;
+            this.colidArea.Width = 87;
             // 
             // rlupArea
             // 
@@ -279,10 +294,10 @@ namespace PV_Dev
             this.rlupArea.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.rlupArea.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idArea", "id Area", 64, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "nombre", 68, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("descripcion", "Area", 92, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 54, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idArea", "id Area", 50, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "nombre", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("descripcion", "Area", 72, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 42, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.rlupArea.DataSource = this.areaBindingSource;
             this.rlupArea.DisplayMember = "descripcion";
             this.rlupArea.Name = "rlupArea";
@@ -297,11 +312,12 @@ namespace PV_Dev
             this.colidSucursal.Caption = "Sucursal";
             this.colidSucursal.ColumnEdit = this.rlupSucursal;
             this.colidSucursal.FieldName = "idSucursal";
-            this.colidSucursal.MinWidth = 30;
+            this.colidSucursal.MinWidth = 23;
             this.colidSucursal.Name = "colidSucursal";
+            this.colidSucursal.OptionsColumn.AllowMove = false;
             this.colidSucursal.Visible = true;
             this.colidSucursal.VisibleIndex = 7;
-            this.colidSucursal.Width = 112;
+            this.colidSucursal.Width = 87;
             // 
             // rlupSucursal
             // 
@@ -309,11 +325,11 @@ namespace PV_Dev
             this.rlupSucursal.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.rlupSucursal.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 90, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "Sucursal", 68, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 76, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("telefono", "telefono", 70, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 54, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 70, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "Sucursal", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 59, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("telefono", "telefono", 54, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 42, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.rlupSucursal.DataSource = this.sucursalBindingSource;
             this.rlupSucursal.DisplayMember = "nombre";
             this.rlupSucursal.Name = "rlupSucursal";
@@ -326,23 +342,24 @@ namespace PV_Dev
             // colactivo
             // 
             this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 30;
+            this.colactivo.MinWidth = 23;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 112;
+            this.colactivo.Width = 87;
             // 
             // frmColaborador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 339);
+            this.ClientSize = new System.Drawing.Size(605, 410);
             this.Controls.Add(this.gcColaborador);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmColaborador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmColaborador";
+            this.Text = "Colaboradores";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmColaborador_FormClosing);
             this.Load += new System.EventHandler(this.frmColaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

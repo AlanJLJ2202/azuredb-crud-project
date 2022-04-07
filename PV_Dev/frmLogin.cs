@@ -24,11 +24,18 @@ namespace PV_Dev
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             Login();
+            Clean();
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void Clean()
+        {
+            txtClave.Text = "";
+            txtClave.Text = "";
         }
 
         public void Login()

@@ -74,10 +74,10 @@ namespace PV_Dev
 
         private void frmColaborador_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
+            //if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            //{
+              //  e.Cancel = true;
+            //}
         }
     }
 }

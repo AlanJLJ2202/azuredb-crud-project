@@ -82,6 +82,7 @@ namespace PV_Dev
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnNuevo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnModificar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnEliminar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.OptionsBar.DrawDragBorder = false;
             this.bar1.Text = "Herramientas";
             // 
             // btnActualizar
@@ -122,35 +123,31 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(606, 34);
+            this.barDockControlTop.Size = new System.Drawing.Size(600, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 348);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 401);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(606, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(600, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 314);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 371);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(606, 34);
+            this.barDockControlRight.Location = new System.Drawing.Point(600, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 314);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 371);
             // 
             // gcAreas
             // 
@@ -161,11 +158,13 @@ namespace PV_Dev
             this.gcAreas.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gcAreas.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gcAreas.EmbeddedNavigator.Buttons.Remove.Visible = false;
-            this.gcAreas.Location = new System.Drawing.Point(0, 34);
+            this.gcAreas.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.gcAreas.Location = new System.Drawing.Point(0, 30);
             this.gcAreas.MainView = this.gvAreas;
+            this.gcAreas.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gcAreas.MenuManager = this.barManager1;
             this.gcAreas.Name = "gcAreas";
-            this.gcAreas.Size = new System.Drawing.Size(606, 314);
+            this.gcAreas.Size = new System.Drawing.Size(600, 371);
             this.gcAreas.TabIndex = 4;
             this.gcAreas.UseEmbeddedNavigator = true;
             this.gcAreas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -182,57 +181,60 @@ namespace PV_Dev
             this.colnombre,
             this.coldescripcion,
             this.colactivo});
+            this.gvAreas.DetailHeight = 295;
             this.gvAreas.GridControl = this.gcAreas;
             this.gvAreas.Name = "gvAreas";
             this.gvAreas.OptionsBehavior.Editable = false;
             this.gvAreas.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
+            this.gvAreas.OptionsView.ColumnAutoWidth = false;
             this.gvAreas.OptionsView.ShowAutoFilterRow = true;
             this.gvAreas.OptionsView.ShowGroupPanel = false;
             // 
             // colidArea
             // 
             this.colidArea.FieldName = "idArea";
-            this.colidArea.MinWidth = 30;
+            this.colidArea.MinWidth = 23;
             this.colidArea.Name = "colidArea";
             this.colidArea.Visible = true;
             this.colidArea.VisibleIndex = 0;
-            this.colidArea.Width = 112;
+            this.colidArea.Width = 87;
             // 
             // colnombre
             // 
             this.colnombre.FieldName = "nombre";
-            this.colnombre.MinWidth = 30;
+            this.colnombre.MinWidth = 23;
             this.colnombre.Name = "colnombre";
             this.colnombre.Visible = true;
             this.colnombre.VisibleIndex = 1;
-            this.colnombre.Width = 112;
+            this.colnombre.Width = 87;
             // 
             // coldescripcion
             // 
             this.coldescripcion.FieldName = "descripcion";
-            this.coldescripcion.MinWidth = 30;
+            this.coldescripcion.MinWidth = 23;
             this.coldescripcion.Name = "coldescripcion";
             this.coldescripcion.Visible = true;
             this.coldescripcion.VisibleIndex = 2;
-            this.coldescripcion.Width = 112;
+            this.coldescripcion.Width = 87;
             // 
             // colactivo
             // 
             this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 30;
+            this.colactivo.MinWidth = 23;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 112;
+            this.colactivo.Width = 87;
             // 
             // frmArea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 348);
+            this.ClientSize = new System.Drawing.Size(600, 401);
             this.Controls.Add(this.gcAreas);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmArea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Area";

@@ -89,6 +89,7 @@ namespace PV_Dev
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnNuevo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnModificar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnEliminar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.OptionsBar.DrawDragBorder = false;
             this.bar1.Text = "Herramientas";
             // 
             // btnActualizar
@@ -159,6 +160,10 @@ namespace PV_Dev
             // 
             this.gcSocio.DataSource = this.socioBindingSource;
             this.gcSocio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcSocio.EmbeddedNavigator.Buttons.Append.Visible = false;
+            this.gcSocio.EmbeddedNavigator.Buttons.CancelEdit.Visible = false;
+            this.gcSocio.EmbeddedNavigator.Buttons.Edit.Visible = false;
+            this.gcSocio.EmbeddedNavigator.Buttons.EndEdit.Visible = false;
             this.gcSocio.Location = new System.Drawing.Point(0, 30);
             this.gcSocio.MainView = this.gvSocio;
             this.gcSocio.MenuManager = this.barManager1;
@@ -167,6 +172,7 @@ namespace PV_Dev
             this.rlupSucursal});
             this.gcSocio.Size = new System.Drawing.Size(707, 403);
             this.gcSocio.TabIndex = 4;
+            this.gcSocio.UseEmbeddedNavigator = true;
             this.gcSocio.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvSocio});
             // 
@@ -301,6 +307,7 @@ namespace PV_Dev
             this.Text = "Socios";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSocio_FormClosing);
             this.Load += new System.EventHandler(this.frmSocio_Load);
+            this.GiveFeedback += new System.Windows.Forms.GiveFeedbackEventHandler(this.frmSocio_GiveFeedback);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcSocio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();

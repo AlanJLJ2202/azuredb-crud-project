@@ -226,6 +226,7 @@ namespace PV_Dev
             this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(336, 333);
             this.Controls.Add(this.groupControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNSocio.IconOptions.SvgImage")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;

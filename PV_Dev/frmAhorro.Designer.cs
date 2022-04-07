@@ -87,6 +87,7 @@ namespace PV_Dev
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnNuevo, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnModificar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnEliminar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.OptionsBar.DrawDragBorder = false;
             this.bar1.Text = "Herramientas";
             // 
             // btnActualizar
@@ -127,47 +128,45 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(711, 34);
+            this.barDockControlTop.Size = new System.Drawing.Size(553, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 467);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 393);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(711, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(553, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 433);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 363);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(711, 34);
+            this.barDockControlRight.Location = new System.Drawing.Point(553, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 433);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 363);
             // 
             // gcAhorro
             // 
             this.gcAhorro.DataSource = this.ahorroBindingSource;
             this.gcAhorro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcAhorro.Location = new System.Drawing.Point(0, 34);
+            this.gcAhorro.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.gcAhorro.Location = new System.Drawing.Point(0, 30);
             this.gcAhorro.MainView = this.gvAhorro;
+            this.gcAhorro.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.gcAhorro.MenuManager = this.barManager1;
             this.gcAhorro.Name = "gcAhorro";
             this.gcAhorro.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.rlupSocios});
-            this.gcAhorro.Size = new System.Drawing.Size(711, 433);
+            this.gcAhorro.Size = new System.Drawing.Size(553, 363);
             this.gcAhorro.TabIndex = 4;
             this.gcAhorro.UseEmbeddedNavigator = true;
             this.gcAhorro.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -185,6 +184,7 @@ namespace PV_Dev
             this.colmonto,
             this.coltasaInteres,
             this.colactivo});
+            this.gvAhorro.DetailHeight = 295;
             this.gvAhorro.GridControl = this.gcAhorro;
             this.gvAhorro.Name = "gvAhorro";
             this.gvAhorro.OptionsBehavior.Editable = false;
@@ -195,22 +195,22 @@ namespace PV_Dev
             // colidAhorro
             // 
             this.colidAhorro.FieldName = "idAhorro";
-            this.colidAhorro.MinWidth = 30;
+            this.colidAhorro.MinWidth = 23;
             this.colidAhorro.Name = "colidAhorro";
             this.colidAhorro.Visible = true;
             this.colidAhorro.VisibleIndex = 0;
-            this.colidAhorro.Width = 112;
+            this.colidAhorro.Width = 87;
             // 
             // colidSocio
             // 
             this.colidSocio.Caption = "Socio";
             this.colidSocio.ColumnEdit = this.rlupSocios;
             this.colidSocio.FieldName = "idSocio";
-            this.colidSocio.MinWidth = 30;
+            this.colidSocio.MinWidth = 23;
             this.colidSocio.Name = "colidSocio";
             this.colidSocio.Visible = true;
             this.colidSocio.VisibleIndex = 1;
-            this.colidSocio.Width = 112;
+            this.colidSocio.Width = 87;
             // 
             // rlupSocios
             // 
@@ -218,13 +218,13 @@ namespace PV_Dev
             this.rlupSocios.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.rlupSocios.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 69, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "nombre", 68, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 68, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 47, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 76, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 90, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 54, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 54, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "nombre", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 37, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 59, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 70, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 42, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.rlupSocios.DataSource = this.socioBindingSource;
             this.rlupSocios.DisplayMember = "nombre";
             this.rlupSocios.Name = "rlupSocios";
@@ -238,39 +238,41 @@ namespace PV_Dev
             // 
             this.colmonto.Caption = "Monto";
             this.colmonto.FieldName = "monto";
-            this.colmonto.MinWidth = 30;
+            this.colmonto.MinWidth = 23;
             this.colmonto.Name = "colmonto";
             this.colmonto.Visible = true;
             this.colmonto.VisibleIndex = 2;
-            this.colmonto.Width = 112;
+            this.colmonto.Width = 87;
             // 
             // coltasaInteres
             // 
             this.coltasaInteres.Caption = "Tasa de Interes";
             this.coltasaInteres.FieldName = "tasaInteres";
-            this.coltasaInteres.MinWidth = 30;
+            this.coltasaInteres.MinWidth = 23;
             this.coltasaInteres.Name = "coltasaInteres";
             this.coltasaInteres.Visible = true;
             this.coltasaInteres.VisibleIndex = 3;
-            this.coltasaInteres.Width = 112;
+            this.coltasaInteres.Width = 87;
             // 
             // colactivo
             // 
             this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 30;
+            this.colactivo.MinWidth = 23;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 112;
+            this.colactivo.Width = 87;
             // 
             // frmAhorro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 467);
+            this.ClientSize = new System.Drawing.Size(553, 393);
             this.Controls.Add(this.gcAhorro);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmAhorro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ahorro";

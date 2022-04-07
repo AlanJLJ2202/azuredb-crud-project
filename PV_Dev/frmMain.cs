@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,12 +34,14 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Usuarios...");
             new frmUsuario { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
         }
 
         private void btnSalir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void btnSucursal_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -50,7 +53,9 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Sucursales...");
             new frmSucursal { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
         }
 
         private void btnSocio_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -62,7 +67,11 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Socios...");
             new frmSocio { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
+
+
         }
 
         private void btnCerrar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -79,7 +88,9 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Ahorros...");
             new frmAhorro { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
         }
 
         private void btnArea_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -91,7 +102,9 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Areas...");
             new frmArea { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
         }
 
         private void btnColaborador_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -103,7 +116,9 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Colaboradores...");
             new frmColaborador { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
         }
 
         private void btnPrestamo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -115,15 +130,17 @@ namespace PV_Dev
                     form.Activate();
                     return;
                 }
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargando detalles de Prestamos...");
             new frmPrestamo { MdiParent = this }.Show();
+            SplashScreenManager.CloseForm();
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-            //{
-             //   e.Cancel = true;
-            //}
+            if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+              e.Cancel = true;
+            }
         }
     }
 }

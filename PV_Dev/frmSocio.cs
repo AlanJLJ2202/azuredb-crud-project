@@ -75,10 +75,15 @@ namespace PV_Dev
 
         private void frmSocio_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
+            //if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            //{
+              //  e.Cancel = true;
+            //}
+        }
+
+        private void frmSocio_GiveFeedback(object sender, GiveFeedbackEventArgs e)
+        {
+
         }
     }
 }
