@@ -136,6 +136,7 @@ namespace PV_Dev
                 XtraMessageBox.Show("Solo se permiten numeros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Handled = true;
                 return;
+               
             }
         }
 
