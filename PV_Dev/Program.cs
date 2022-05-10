@@ -18,7 +18,12 @@ namespace PV_Dev
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNColaborador());
+            Application.Run(new frmLogin());
         }
     }
+
+
+
+
+
 }
