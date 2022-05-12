@@ -40,6 +40,7 @@ namespace PV_Dev
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             if (string.IsNullOrEmpty(cmbSocio.Text) || string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text))
             {
 
@@ -56,7 +57,7 @@ namespace PV_Dev
                     idSocio = (int)cmbSocio.EditValue,
                     monto = decimal.Parse(txtMonto.Text),
                     tasaInteres = decimal.Parse(txtTasaInteres.Text),
-                    fecha = DateTime.Parse(txtFecha.Text)
+                    fecha = DateTime.Parse(txtCalendar.Text)
 
                 }.Update() > 0)
                 {
@@ -72,7 +73,7 @@ namespace PV_Dev
                     idSocio = (int)cmbSocio.EditValue,
                     monto = decimal.Parse(txtMonto.Text),
                     tasaInteres = decimal.Parse(txtTasaInteres.Text),
-                    fecha = DateTime.Parse(txtFecha.Text)
+                    fecha = DateTime.Parse(txtCalendar.Text)
                 }.Add() > 0)
                 {
                     XtraMessageBox.Show("Prestamo almacenado correctamente", "Prestamos",
@@ -86,7 +87,7 @@ namespace PV_Dev
             cmbSocio.EditValue = "";
             txtMonto.Text = "";
             txtTasaInteres.Text = "";
-            txtFecha.Text = "";
+            txtCalendar.Text = "";
             txtMonto.Focus();
         }
 
