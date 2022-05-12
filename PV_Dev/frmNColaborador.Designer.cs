@@ -140,6 +140,7 @@ namespace PV_Dev
             this.txtSueldo.Location = new System.Drawing.Point(96, 148);
             this.txtSueldo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtSueldo.Name = "txtSueldo";
+            this.txtSueldo.Properties.MaxLength = 5;
             this.txtSueldo.Size = new System.Drawing.Size(180, 22);
             this.txtSueldo.TabIndex = 5;
             this.txtSueldo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSueldo_KeyPress);
@@ -150,6 +151,7 @@ namespace PV_Dev
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDireccion.Properties.MaxLength = 30;
             this.txtDireccion.Size = new System.Drawing.Size(180, 22);
             this.txtDireccion.TabIndex = 4;
             // 
@@ -158,6 +160,7 @@ namespace PV_Dev
             this.txtEdad.Location = new System.Drawing.Point(96, 75);
             this.txtEdad.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Properties.MaxLength = 2;
             this.txtEdad.Size = new System.Drawing.Size(180, 22);
             this.txtEdad.TabIndex = 3;
             this.txtEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdad_KeyPress);
@@ -168,6 +171,7 @@ namespace PV_Dev
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtApellido.Properties.MaxLength = 15;
             this.txtApellido.Size = new System.Drawing.Size(180, 22);
             this.txtApellido.TabIndex = 2;
             this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
@@ -178,6 +182,7 @@ namespace PV_Dev
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtNombre.Properties.MaxLength = 15;
             this.txtNombre.Size = new System.Drawing.Size(180, 22);
             this.txtNombre.TabIndex = 1;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
