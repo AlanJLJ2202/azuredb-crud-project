@@ -22,7 +22,7 @@ namespace PV_Dev
             cmbSocio.EditValue = prestamo.idSocio;
             txtMonto.Text = prestamo.monto.ToString();
             txtTasaInteres.Text = prestamo.tasaInteres.ToString();
-            txtFecha.Text = prestamo.fecha.ToString();
+            //txtFecha.Text = prestamo.fecha.ToString();
         }
 
         private void frmNPrestamo_Load(object sender, EventArgs e)
@@ -109,6 +109,11 @@ namespace PV_Dev
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void txtCalendar_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
