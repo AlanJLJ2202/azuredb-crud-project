@@ -41,22 +41,24 @@ namespace PV_Dev
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.gcAhorro = new DevExpress.XtraGrid.GridControl();
+            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.gcAhorros = new DevExpress.XtraGrid.GridControl();
+            this.gvAhorros = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ahorroBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gvAhorro = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colidAhorro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colidSocio = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.rlupSocios = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colfecha = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colmonto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltasaInteres = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcAhorro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ahorroBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvAhorro)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rlupSocios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcAhorros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAhorros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ahorroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -128,15 +130,15 @@ namespace PV_Dev
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(553, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(747, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 393);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 509);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(553, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(747, 0);
             // 
             // barDockControlLeft
             // 
@@ -144,129 +146,121 @@ namespace PV_Dev
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 363);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 479);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(553, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(747, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 363);
-            // 
-            // gcAhorro
-            // 
-            this.gcAhorro.DataSource = this.ahorroBindingSource;
-            this.gcAhorro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcAhorro.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.gcAhorro.Location = new System.Drawing.Point(0, 30);
-            this.gcAhorro.MainView = this.gvAhorro;
-            this.gcAhorro.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.gcAhorro.MenuManager = this.barManager1;
-            this.gcAhorro.Name = "gcAhorro";
-            this.gcAhorro.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.rlupSocios});
-            this.gcAhorro.Size = new System.Drawing.Size(553, 363);
-            this.gcAhorro.TabIndex = 4;
-            this.gcAhorro.UseEmbeddedNavigator = true;
-            this.gcAhorro.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvAhorro});
-            // 
-            // ahorroBindingSource
-            // 
-            this.ahorroBindingSource.DataSource = typeof(DAL.Ahorro);
-            // 
-            // gvAhorro
-            // 
-            this.gvAhorro.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colidAhorro,
-            this.colidSocio,
-            this.colmonto,
-            this.coltasaInteres,
-            this.colactivo});
-            this.gvAhorro.DetailHeight = 295;
-            this.gvAhorro.GridControl = this.gcAhorro;
-            this.gvAhorro.Name = "gvAhorro";
-            this.gvAhorro.OptionsBehavior.Editable = false;
-            this.gvAhorro.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
-            this.gvAhorro.OptionsView.ColumnAutoWidth = false;
-            this.gvAhorro.OptionsView.ShowGroupPanel = false;
-            // 
-            // colidAhorro
-            // 
-            this.colidAhorro.FieldName = "idAhorro";
-            this.colidAhorro.MinWidth = 23;
-            this.colidAhorro.Name = "colidAhorro";
-            this.colidAhorro.Visible = true;
-            this.colidAhorro.VisibleIndex = 0;
-            this.colidAhorro.Width = 87;
-            // 
-            // colidSocio
-            // 
-            this.colidSocio.Caption = "Socio";
-            this.colidSocio.ColumnEdit = this.rlupSocios;
-            this.colidSocio.FieldName = "idSocio";
-            this.colidSocio.MinWidth = 23;
-            this.colidSocio.Name = "colidSocio";
-            this.colidSocio.Visible = true;
-            this.colidSocio.VisibleIndex = 1;
-            this.colidSocio.Width = 87;
-            // 
-            // rlupSocios
-            // 
-            this.rlupSocios.AutoHeight = false;
-            this.rlupSocios.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.rlupSocios.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 54, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "nombre", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 37, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 59, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 70, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 42, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.rlupSocios.DataSource = this.socioBindingSource;
-            this.rlupSocios.DisplayMember = "nombre";
-            this.rlupSocios.Name = "rlupSocios";
-            this.rlupSocios.ValueMember = "idSocio";
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 479);
             // 
             // socioBindingSource
             // 
             this.socioBindingSource.DataSource = typeof(DAL.Socio);
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.gcAhorros);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelControl1.Location = new System.Drawing.Point(0, 30);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(747, 479);
+            this.panelControl1.TabIndex = 14;
+            this.panelControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControl1_Paint);
+            // 
+            // gcAhorros
+            // 
+            this.gcAhorros.DataSource = this.ahorroBindingSource;
+            this.gcAhorros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcAhorros.Location = new System.Drawing.Point(2, 2);
+            this.gcAhorros.MainView = this.gvAhorros;
+            this.gcAhorros.MenuManager = this.barManager1;
+            this.gcAhorros.Name = "gcAhorros";
+            this.gcAhorros.Size = new System.Drawing.Size(743, 475);
+            this.gcAhorros.TabIndex = 0;
+            this.gcAhorros.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvAhorros});
+            this.gcAhorros.Click += new System.EventHandler(this.gridControl1_Click);
+            // 
+            // gvAhorros
+            // 
+            this.gvAhorros.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colidAhorro,
+            this.colidSocio,
+            this.colfecha,
+            this.colmonto,
+            this.coltasaInteres,
+            this.colactivo});
+            this.gvAhorros.GridControl = this.gcAhorros;
+            this.gvAhorros.Name = "gvAhorros";
+            this.gvAhorros.OptionsView.ShowGroupPanel = false;
+            // 
+            // ahorroBindingSource
+            // 
+            this.ahorroBindingSource.DataSource = typeof(DAL.Ahorro);
+            // 
+            // colidAhorro
+            // 
+            this.colidAhorro.FieldName = "idAhorro";
+            this.colidAhorro.MinWidth = 25;
+            this.colidAhorro.Name = "colidAhorro";
+            this.colidAhorro.Visible = true;
+            this.colidAhorro.VisibleIndex = 0;
+            this.colidAhorro.Width = 94;
+            // 
+            // colidSocio
+            // 
+            this.colidSocio.FieldName = "idSocio";
+            this.colidSocio.MinWidth = 25;
+            this.colidSocio.Name = "colidSocio";
+            this.colidSocio.Visible = true;
+            this.colidSocio.VisibleIndex = 1;
+            this.colidSocio.Width = 94;
+            // 
+            // colfecha
+            // 
+            this.colfecha.FieldName = "fecha";
+            this.colfecha.MinWidth = 25;
+            this.colfecha.Name = "colfecha";
+            this.colfecha.Visible = true;
+            this.colfecha.VisibleIndex = 2;
+            this.colfecha.Width = 94;
+            // 
             // colmonto
             // 
-            this.colmonto.Caption = "Monto";
             this.colmonto.FieldName = "monto";
-            this.colmonto.MinWidth = 23;
+            this.colmonto.MinWidth = 25;
             this.colmonto.Name = "colmonto";
             this.colmonto.Visible = true;
-            this.colmonto.VisibleIndex = 2;
-            this.colmonto.Width = 87;
+            this.colmonto.VisibleIndex = 3;
+            this.colmonto.Width = 94;
             // 
             // coltasaInteres
             // 
-            this.coltasaInteres.Caption = "Tasa de Interes";
             this.coltasaInteres.FieldName = "tasaInteres";
-            this.coltasaInteres.MinWidth = 23;
+            this.coltasaInteres.MinWidth = 25;
             this.coltasaInteres.Name = "coltasaInteres";
             this.coltasaInteres.Visible = true;
-            this.coltasaInteres.VisibleIndex = 3;
-            this.coltasaInteres.Width = 87;
+            this.coltasaInteres.VisibleIndex = 4;
+            this.coltasaInteres.Width = 94;
             // 
             // colactivo
             // 
             this.colactivo.FieldName = "activo";
-            this.colactivo.MinWidth = 23;
+            this.colactivo.MinWidth = 25;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Width = 87;
+            this.colactivo.Visible = true;
+            this.colactivo.VisibleIndex = 5;
+            this.colactivo.Width = 94;
             // 
             // frmAhorro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 393);
-            this.Controls.Add(this.gcAhorro);
+            this.ClientSize = new System.Drawing.Size(747, 509);
+            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -279,11 +273,12 @@ namespace PV_Dev
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAhorro_FormClosing);
             this.Load += new System.EventHandler(this.frmAhorro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcAhorro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ahorroBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvAhorro)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rlupSocios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcAhorros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAhorros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ahorroBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,15 +296,16 @@ namespace PV_Dev
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraGrid.GridControl gcAhorro;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvAhorro;
+        private System.Windows.Forms.BindingSource socioBindingSource;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraGrid.GridControl gcAhorros;
         private System.Windows.Forms.BindingSource ahorroBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvAhorros;
         private DevExpress.XtraGrid.Columns.GridColumn colidAhorro;
         private DevExpress.XtraGrid.Columns.GridColumn colidSocio;
+        private DevExpress.XtraGrid.Columns.GridColumn colfecha;
         private DevExpress.XtraGrid.Columns.GridColumn colmonto;
         private DevExpress.XtraGrid.Columns.GridColumn coltasaInteres;
         private DevExpress.XtraGrid.Columns.GridColumn colactivo;
-        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit rlupSocios;
-        private System.Windows.Forms.BindingSource socioBindingSource;
     }
 }
