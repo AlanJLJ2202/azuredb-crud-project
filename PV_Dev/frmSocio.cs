@@ -85,5 +85,11 @@ namespace PV_Dev
         {
 
         }
+
+        private void btnEstadoCuenta_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new frmNEstadoCuenta((int)gvSocio.GetFocusedRowCellValue("idSocio")) { Text = "Estado de cuenta" }.ShowDialog();
+            btnActualizar.PerformClick();
+        }
     }
 }

@@ -104,6 +104,12 @@
     <Compile Include="frmNColaborador.Designer.cs">
       <DependentUpon>frmNColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNEstadoCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNEstadoCuenta.Designer.cs">
+      <DependentUpon>frmNEstadoCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNPrestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNColaborador.resx">
       <DependentUpon>frmNColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNEstadoCuenta.resx">
+      <DependentUpon>frmNEstadoCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNPrestamo.resx">
       <DependentUpon>frmNPrestamo.cs</DependentUpon>
