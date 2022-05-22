@@ -29,6 +29,7 @@ namespace PV_Dev
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtSucursal = new DevExpress.XtraEditors.LabelControl();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -45,8 +46,30 @@ namespace PV_Dev
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.gcAhorro = new DevExpress.XtraGrid.GridControl();
+            this.gvAhorro = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.gcPrestamo = new DevExpress.XtraGrid.GridControl();
+            this.prestamoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvPrestamo = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colidPrestamo = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colidSocio = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colfecha = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colmonto = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.coltasaInteres = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colactivo = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcAhorro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAhorro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcPrestamo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prestamoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvPrestamo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -66,7 +89,7 @@ namespace PV_Dev
             this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(421, 30);
+            this.groupControl1.Location = new System.Drawing.Point(397, 12);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(354, 291);
             this.groupControl1.TabIndex = 0;
@@ -168,7 +191,7 @@ namespace PV_Dev
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(93, 159);
+            this.labelControl4.Location = new System.Drawing.Point(112, 159);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(41, 19);
             this.labelControl4.TabIndex = 3;
@@ -190,11 +213,129 @@ namespace PV_Dev
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Nombre completo:";
             // 
+            // panelControl1
+            // 
+            this.panelControl1.Controls.Add(this.gcAhorro);
+            this.panelControl1.Location = new System.Drawing.Point(30, 330);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(556, 314);
+            this.panelControl1.TabIndex = 1;
+            // 
+            // gcAhorro
+            // 
+            this.gcAhorro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcAhorro.Location = new System.Drawing.Point(2, 2);
+            this.gcAhorro.MainView = this.gvAhorro;
+            this.gcAhorro.Name = "gcAhorro";
+            this.gcAhorro.Size = new System.Drawing.Size(552, 310);
+            this.gcAhorro.TabIndex = 0;
+            this.gcAhorro.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvAhorro});
+            this.gcAhorro.Click += new System.EventHandler(this.gcAhorro_Click);
+            // 
+            // gvAhorro
+            // 
+            this.gvAhorro.GridControl = this.gcAhorro;
+            this.gvAhorro.Name = "gvAhorro";
+            this.gvAhorro.OptionsView.ShowGroupPanel = false;
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.gcPrestamo);
+            this.panelControl2.Location = new System.Drawing.Point(622, 330);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(514, 314);
+            this.panelControl2.TabIndex = 2;
+            // 
+            // gcPrestamo
+            // 
+            this.gcPrestamo.DataSource = this.prestamoBindingSource;
+            this.gcPrestamo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcPrestamo.Location = new System.Drawing.Point(2, 2);
+            this.gcPrestamo.MainView = this.gvPrestamo;
+            this.gcPrestamo.Name = "gcPrestamo";
+            this.gcPrestamo.Size = new System.Drawing.Size(510, 310);
+            this.gcPrestamo.TabIndex = 0;
+            this.gcPrestamo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvPrestamo});
+            // 
+            // prestamoBindingSource
+            // 
+            this.prestamoBindingSource.DataSource = typeof(DAL.Prestamo);
+            // 
+            // gvPrestamo
+            // 
+            this.gvPrestamo.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colidPrestamo,
+            this.colidSocio,
+            this.colfecha,
+            this.colmonto,
+            this.coltasaInteres,
+            this.colactivo});
+            this.gvPrestamo.GridControl = this.gcPrestamo;
+            this.gvPrestamo.Name = "gvPrestamo";
+            this.gvPrestamo.OptionsBehavior.Editable = false;
+            this.gvPrestamo.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
+            this.gvPrestamo.OptionsView.ColumnAutoWidth = false;
+            this.gvPrestamo.OptionsView.ShowGroupPanel = false;
+            // 
+            // colidPrestamo
+            // 
+            this.colidPrestamo.FieldName = "idPrestamo";
+            this.colidPrestamo.MinWidth = 30;
+            this.colidPrestamo.Name = "colidPrestamo";
+            this.colidPrestamo.Visible = true;
+            this.colidPrestamo.VisibleIndex = 0;
+            this.colidPrestamo.Width = 112;
+            // 
+            // colidSocio
+            // 
+            this.colidSocio.FieldName = "idSocio";
+            this.colidSocio.MinWidth = 30;
+            this.colidSocio.Name = "colidSocio";
+            this.colidSocio.Width = 112;
+            // 
+            // colfecha
+            // 
+            this.colfecha.FieldName = "fecha";
+            this.colfecha.MinWidth = 30;
+            this.colfecha.Name = "colfecha";
+            this.colfecha.Visible = true;
+            this.colfecha.VisibleIndex = 1;
+            this.colfecha.Width = 112;
+            // 
+            // colmonto
+            // 
+            this.colmonto.FieldName = "monto";
+            this.colmonto.MinWidth = 30;
+            this.colmonto.Name = "colmonto";
+            this.colmonto.Visible = true;
+            this.colmonto.VisibleIndex = 2;
+            this.colmonto.Width = 112;
+            // 
+            // coltasaInteres
+            // 
+            this.coltasaInteres.FieldName = "tasaInteres";
+            this.coltasaInteres.MinWidth = 30;
+            this.coltasaInteres.Name = "coltasaInteres";
+            this.coltasaInteres.Visible = true;
+            this.coltasaInteres.VisibleIndex = 3;
+            this.coltasaInteres.Width = 112;
+            // 
+            // colactivo
+            // 
+            this.colactivo.FieldName = "activo";
+            this.colactivo.MinWidth = 30;
+            this.colactivo.Name = "colactivo";
+            this.colactivo.Width = 112;
+            // 
             // frmNEstadoCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 558);
+            this.ClientSize = new System.Drawing.Size(1170, 668);
+            this.Controls.Add(this.panelControl2);
+            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "frmNEstadoCuenta";
             this.Text = "Estado de cuenta";
@@ -202,6 +343,15 @@ namespace PV_Dev
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcAhorro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAhorro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcPrestamo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prestamoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvPrestamo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,5 +374,18 @@ namespace PV_Dev
         private DevExpress.XtraEditors.LabelControl txtNombreCompleto;
         private DevExpress.XtraEditors.LabelControl txtSucursal;
         private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraGrid.GridControl gcAhorro;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvAhorro;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraGrid.GridControl gcPrestamo;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvPrestamo;
+        private System.Windows.Forms.BindingSource prestamoBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colidPrestamo;
+        private DevExpress.XtraGrid.Columns.GridColumn colidSocio;
+        private DevExpress.XtraGrid.Columns.GridColumn colfecha;
+        private DevExpress.XtraGrid.Columns.GridColumn colmonto;
+        private DevExpress.XtraGrid.Columns.GridColumn coltasaInteres;
+        private DevExpress.XtraGrid.Columns.GridColumn colactivo;
     }
 }

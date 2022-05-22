@@ -59,7 +59,15 @@ namespace DAL
         {
             var parameters = new DynamicParameters();
             parameters.Add("@idPrestamo", idPrestamo);
+
             return dataAccess.QuerySingle<Prestamo>("stp_prestamos_getbyid", parameters);
+        }
+
+        public Prestamo GetBySocio()
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@idSocio", idSocio);
+            return dataAccess.QuerySingle<Prestamo>("stp_prestamos_getbysocio", parameters);
         }
     }
 }

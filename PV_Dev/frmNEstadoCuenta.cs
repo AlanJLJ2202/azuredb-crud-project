@@ -40,15 +40,23 @@ namespace PV_Dev
 
         private void frmNEstadoCuenta_Load(object sender, EventArgs e)
         {
-
+            //prestamoBindingSource.DataSource = new Prestamo(){idSocio = idSocio}.GetBySocio();
+            //gvPrestamo.BestFitColumns();
+            prestamoBindingSource.DataSource = new Prestamo().GetAll();
+            gvPrestamo.BestFitColumns();
         }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)
         {
-
+          
         }
 
         private void labelControl3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gcAhorro_Click(object sender, EventArgs e)
         {
 
         }
