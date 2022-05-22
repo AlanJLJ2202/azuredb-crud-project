@@ -11,10 +11,9 @@ namespace DAL
    public class Ahorro
     {
         private DataAccess dataAccess = DataAccess.Instance();
-
+        //hola
         public int idAhorro { get; set; }
         public int idSocio { get; set; }
-
         public DateTime fecha { get; set; }
         public decimal monto { get; set; }
         public decimal tasaInteres { get; set; }
