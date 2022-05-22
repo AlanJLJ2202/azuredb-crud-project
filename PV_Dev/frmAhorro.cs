@@ -23,7 +23,7 @@ namespace PV_Dev
         {
             socioBindingSource.DataSource = new Socio().GetAll();
             ahorroBindingSource.DataSource = new Ahorro().GetAll();
-            gvAhorro.BestFitColumns();
+            gvAhorros.BestFitColumns();
         }
 
         private void btnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -48,13 +48,13 @@ namespace PV_Dev
 
         private void btnModificar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            new frmNAhorro((int)gvAhorro.GetFocusedRowCellValue("idAhorro")) { Text = "Ahorros" }.ShowDialog();
+            new frmNAhorro((int)gvAhorros.GetFocusedRowCellValue("idAhorro")) { Text = "Ahorros" }.ShowDialog();
             btnActualizar.PerformClick();
         }
 
         private void btnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            int idAhorro = (int)gvAhorro.GetFocusedRowCellValue("idAhorro");
+            int idAhorro = (int)gvAhorros.GetFocusedRowCellValue("idAhorro");
 
             if (new Ahorro()
             {
@@ -73,6 +73,21 @@ namespace PV_Dev
         private void frmAhorro_FormClosing(object sender, FormClosingEventArgs e)
         {
            
+        }
+
+        private void gcAhorros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

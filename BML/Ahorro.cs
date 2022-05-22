@@ -14,6 +14,8 @@ namespace DAL
 
         public int idAhorro { get; set; }
         public int idSocio { get; set; }
+
+        public DateTime fecha { get; set; }
         public decimal monto { get; set; }
         public decimal tasaInteres { get; set; }
         public bool activo { get; set; }
@@ -24,6 +26,7 @@ namespace DAL
         {
             var parameters = new DynamicParameters();
             parameters.Add("@idSocio", idSocio);
+            parameters.Add("@fecha", fecha);
             parameters.Add("@monto", monto);
             parameters.Add("@tasaInteres", tasaInteres);
             return dataAccess.Execute("stp_ahorros_add", parameters);
@@ -41,6 +44,7 @@ namespace DAL
             var parameters = new DynamicParameters();
             parameters.Add("@idAhorro", idAhorro);
             parameters.Add("@idSocio", idSocio);
+            parameters.Add("@fecha", fecha);
             parameters.Add("@monto", monto);
             parameters.Add("@tasaInteres", tasaInteres);
             return dataAccess.Execute("stp_ahorros_update", parameters);
