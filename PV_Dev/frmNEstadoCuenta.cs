@@ -43,7 +43,9 @@ namespace PV_Dev
             //prestamoBindingSource.DataSource = new Prestamo(){idSocio = idSocio}.GetBySocio();
             //gvPrestamo.BestFitColumns();
             prestamoBindingSource.DataSource = new Prestamo().GetAll();
+            ahorroBindingSource.DataSource = new Ahorro().GetAll();
             gvPrestamo.BestFitColumns();
+            gvAhorro.BestFitColumns();
         }
 
         private void groupControl1_Paint(object sender, PaintEventArgs e)
@@ -57,6 +59,11 @@ namespace PV_Dev
         }
 
         private void gcAhorro_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl6_Click(object sender, EventArgs e)
         {
 
         }

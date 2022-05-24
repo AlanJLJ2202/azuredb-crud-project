@@ -347,3 +347,4 @@ C:\Users\Mario\Desktop\Proyecto 3er Parcial\Proyecto 2do Parcial\Proyecto_1Pacs\
 C:\Users\Mario\Desktop\Proyecto 3er Parcial\Proyecto 2do Parcial\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.exe
 C:\Users\Mario\Desktop\Proyecto 3er Parcial\Proyecto 2do Parcial\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.pdb
 C:\Users\Mario\Desktop\Proyecto 3er Parcial\Proyecto 2do Parcial\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNEstadoCuenta.resources
+C:\Users\AJLJ-\source\repos\Proyecto_1Pacs\PV_Dev\obj\Debug\PV_Dev.frmNEstadoCuenta.resources

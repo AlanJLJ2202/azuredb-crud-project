@@ -44,10 +44,11 @@ namespace PV_Dev
             this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.gcAhorros = new DevExpress.XtraGrid.GridControl();
-            this.gvAhorros = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.ahorroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gvAhorros = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colidAhorro = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colidSocio = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.rlupSocios = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.colfecha = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colmonto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltasaInteres = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -57,8 +58,9 @@ namespace PV_Dev
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gcAhorros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvAhorros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ahorroBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAhorros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rlupSocios)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -178,11 +180,17 @@ namespace PV_Dev
             this.gcAhorros.MainView = this.gvAhorros;
             this.gcAhorros.MenuManager = this.barManager1;
             this.gcAhorros.Name = "gcAhorros";
+            this.gcAhorros.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.rlupSocios});
             this.gcAhorros.Size = new System.Drawing.Size(743, 475);
             this.gcAhorros.TabIndex = 0;
             this.gcAhorros.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvAhorros});
             this.gcAhorros.Click += new System.EventHandler(this.gridControl1_Click);
+            // 
+            // ahorroBindingSource
+            // 
+            this.ahorroBindingSource.DataSource = typeof(DAL.Ahorro);
             // 
             // gvAhorros
             // 
@@ -195,14 +203,14 @@ namespace PV_Dev
             this.colactivo});
             this.gvAhorros.GridControl = this.gcAhorros;
             this.gvAhorros.Name = "gvAhorros";
+            this.gvAhorros.OptionsBehavior.Editable = false;
+            this.gvAhorros.OptionsView.ColumnAutoWidth = false;
+            this.gvAhorros.OptionsView.ShowAutoFilterRow = true;
             this.gvAhorros.OptionsView.ShowGroupPanel = false;
-            // 
-            // ahorroBindingSource
-            // 
-            this.ahorroBindingSource.DataSource = typeof(DAL.Ahorro);
             // 
             // colidAhorro
             // 
+            this.colidAhorro.Caption = "ID";
             this.colidAhorro.FieldName = "idAhorro";
             this.colidAhorro.MinWidth = 25;
             this.colidAhorro.Name = "colidAhorro";
@@ -212,6 +220,8 @@ namespace PV_Dev
             // 
             // colidSocio
             // 
+            this.colidSocio.Caption = "Socio";
+            this.colidSocio.ColumnEdit = this.rlupSocios;
             this.colidSocio.FieldName = "idSocio";
             this.colidSocio.MinWidth = 25;
             this.colidSocio.Name = "colidSocio";
@@ -219,8 +229,27 @@ namespace PV_Dev
             this.colidSocio.VisibleIndex = 1;
             this.colidSocio.Width = 94;
             // 
+            // rlupSocios
+            // 
+            this.rlupSocios.AutoHeight = false;
+            this.rlupSocios.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.rlupSocios.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 56, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "Nombre", 55, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 55, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 39, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 62, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 74, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 44, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.rlupSocios.DataSource = this.socioBindingSource;
+            this.rlupSocios.DisplayMember = "nombre";
+            this.rlupSocios.Name = "rlupSocios";
+            this.rlupSocios.ValueMember = "idSocio";
+            // 
             // colfecha
             // 
+            this.colfecha.Caption = "Fecha";
             this.colfecha.FieldName = "fecha";
             this.colfecha.MinWidth = 25;
             this.colfecha.Name = "colfecha";
@@ -230,6 +259,7 @@ namespace PV_Dev
             // 
             // colmonto
             // 
+            this.colmonto.Caption = "Monto";
             this.colmonto.FieldName = "monto";
             this.colmonto.MinWidth = 25;
             this.colmonto.Name = "colmonto";
@@ -239,6 +269,7 @@ namespace PV_Dev
             // 
             // coltasaInteres
             // 
+            this.coltasaInteres.Caption = "Tasa de Interes";
             this.coltasaInteres.FieldName = "tasaInteres";
             this.coltasaInteres.MinWidth = 25;
             this.coltasaInteres.Name = "coltasaInteres";
@@ -251,8 +282,6 @@ namespace PV_Dev
             this.colactivo.FieldName = "activo";
             this.colactivo.MinWidth = 25;
             this.colactivo.Name = "colactivo";
-            this.colactivo.Visible = true;
-            this.colactivo.VisibleIndex = 5;
             this.colactivo.Width = 94;
             // 
             // frmAhorro
@@ -277,8 +306,9 @@ namespace PV_Dev
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gcAhorros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvAhorros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ahorroBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvAhorros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rlupSocios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,5 +337,6 @@ namespace PV_Dev
         private DevExpress.XtraGrid.Columns.GridColumn colmonto;
         private DevExpress.XtraGrid.Columns.GridColumn coltasaInteres;
         private DevExpress.XtraGrid.Columns.GridColumn colactivo;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit rlupSocios;
     }
 }

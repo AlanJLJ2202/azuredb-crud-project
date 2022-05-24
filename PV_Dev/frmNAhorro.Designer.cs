@@ -41,16 +41,22 @@ namespace PV_Dev
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cmbSocio = new DevExpress.XtraEditors.LookUpEdit();
             this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txtCalendar = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSocio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.txtCalendar);
+            this.groupControl1.Controls.Add(this.labelControl4);
             this.groupControl1.Controls.Add(this.btnCancelar);
             this.groupControl1.Controls.Add(this.btnGuardar);
             this.groupControl1.Controls.Add(this.txtTasaInteres);
@@ -63,14 +69,14 @@ namespace PV_Dev
             this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(336, 234);
+            this.groupControl1.Size = new System.Drawing.Size(336, 293);
             this.groupControl1.TabIndex = 0;
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
-            this.btnCancelar.Location = new System.Drawing.Point(194, 161);
+            this.btnCancelar.Location = new System.Drawing.Point(198, 219);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(103, 42);
@@ -80,7 +86,7 @@ namespace PV_Dev
             // btnGuardar
             // 
             this.btnGuardar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGuardar.ImageOptions.SvgImage")));
-            this.btnGuardar.Location = new System.Drawing.Point(36, 161);
+            this.btnGuardar.Location = new System.Drawing.Point(40, 219);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(103, 42);
@@ -167,13 +173,36 @@ namespace PV_Dev
             // 
             this.socioBindingSource.DataSource = typeof(DAL.Socio);
             // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(60, 160);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(56, 21);
+            this.labelControl4.TabIndex = 6;
+            this.labelControl4.Text = "Fecha:";
+            // 
+            // txtCalendar
+            // 
+            this.txtCalendar.EditValue = null;
+            this.txtCalendar.Location = new System.Drawing.Point(141, 160);
+            this.txtCalendar.Name = "txtCalendar";
+            this.txtCalendar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCalendar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCalendar.Size = new System.Drawing.Size(169, 22);
+            this.txtCalendar.TabIndex = 7;
+            // 
             // frmNAhorro
             // 
             this.AcceptButton = this.btnGuardar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(352, 259);
+            this.ClientSize = new System.Drawing.Size(352, 314);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNAhorro.IconOptions.SvgImage")));
@@ -190,6 +219,8 @@ namespace PV_Dev
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSocio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -206,5 +237,7 @@ namespace PV_Dev
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.BindingSource socioBindingSource;
         private DevExpress.XtraEditors.LookUpEdit cmbSocio;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.DateEdit txtCalendar;
     }
 }

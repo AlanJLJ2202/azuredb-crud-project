@@ -49,6 +49,7 @@ namespace PV_Dev
                 {
                     idAhorro = idAhorro,
                     idSocio = (int) cmbSocio.EditValue,
+                    fecha = DateTime.Parse(txtCalendar.Text),
                     monto = decimal.Parse(txtMonto.Text),
                     tasaInteres = decimal.Parse(txtTasaInteres.Text)
 
@@ -63,6 +64,7 @@ namespace PV_Dev
                 if (new Ahorro()
                 {
                     idSocio = (int)cmbSocio.EditValue,
+                    fecha = DateTime.Parse(txtCalendar.Text),
                     monto = decimal.Parse(txtMonto.Text),
                     tasaInteres = decimal.Parse(txtTasaInteres.Text)
 
