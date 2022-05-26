@@ -62,5 +62,12 @@ namespace DAL
             parameters.Add("@idAhorro", idAhorro);
             return dataAccess.QuerySingle<Ahorro>("stp_ahorros_getbyid", parameters);
         }
+
+        public IEnumerable <Ahorro> GetBySocio()
+        {
+            var parameters = new DynamicParameters();
+            parameters.Add("@idSocio", idSocio);
+            return dataAccess.Query<Ahorro>("stp_ahorros_getbysocio", parameters);
+        }
     }
 }

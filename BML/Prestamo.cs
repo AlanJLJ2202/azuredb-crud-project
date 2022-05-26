@@ -63,11 +63,11 @@ namespace DAL
             return dataAccess.QuerySingle<Prestamo>("stp_prestamos_getbyid", parameters);
         }
 
-        public Prestamo GetBySocio()
+        public IEnumerable <Prestamo> GetBySocio()
         {
             var parameters = new DynamicParameters();
             parameters.Add("@idSocio", idSocio);
-            return dataAccess.QuerySingle<Prestamo>("stp_prestamos_getbysocio", parameters);
+            return dataAccess.Query<Prestamo>("stp_prestamos_getbysocio", parameters);
         }
     }
 }

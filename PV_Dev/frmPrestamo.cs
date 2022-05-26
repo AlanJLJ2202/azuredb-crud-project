@@ -25,6 +25,7 @@ namespace PV_Dev
         {
             socioBindingSource.DataSource = new Socio().GetAll();
             prestamoBindingSource.DataSource = new Prestamo().GetAll();
+            //prestamoBindingSource.DataSource = new Prestamo().GetBySocio();
             gvPrestamo.BestFitColumns();
         }
 
