@@ -32,6 +32,8 @@ namespace PV_Dev
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNAhorro));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtCalendar = new DevExpress.XtraEditors.DateEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
             this.txtTasaInteres = new DevExpress.XtraEditors.TextEdit();
@@ -41,16 +43,14 @@ namespace PV_Dev
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.cmbSocio = new DevExpress.XtraEditors.LookUpEdit();
             this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtCalendar = new DevExpress.XtraEditors.DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSocio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -65,41 +65,67 @@ namespace PV_Dev
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.cmbSocio);
-            this.groupControl1.Location = new System.Drawing.Point(9, 10);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupControl1.Location = new System.Drawing.Point(12, 12);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(336, 293);
+            this.groupControl1.Size = new System.Drawing.Size(432, 348);
             this.groupControl1.TabIndex = 0;
+            // 
+            // txtCalendar
+            // 
+            this.txtCalendar.EditValue = null;
+            this.txtCalendar.Location = new System.Drawing.Point(181, 190);
+            this.txtCalendar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCalendar.Name = "txtCalendar";
+            this.txtCalendar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCalendar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCalendar.Size = new System.Drawing.Size(217, 26);
+            this.txtCalendar.TabIndex = 7;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(77, 190);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(67, 24);
+            this.labelControl4.TabIndex = 6;
+            this.labelControl4.Text = "Fecha:";
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
-            this.btnCancelar.Location = new System.Drawing.Point(198, 219);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCancelar.Location = new System.Drawing.Point(255, 260);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(103, 42);
+            this.btnCancelar.Size = new System.Drawing.Size(132, 50);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
             this.btnGuardar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGuardar.ImageOptions.SvgImage")));
-            this.btnGuardar.Location = new System.Drawing.Point(40, 219);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnGuardar.Location = new System.Drawing.Point(51, 260);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(103, 42);
+            this.btnGuardar.Size = new System.Drawing.Size(132, 50);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtTasaInteres
             // 
-            this.txtTasaInteres.Location = new System.Drawing.Point(141, 113);
-            this.txtTasaInteres.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTasaInteres.Location = new System.Drawing.Point(181, 134);
+            this.txtTasaInteres.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTasaInteres.Name = "txtTasaInteres";
-            this.txtTasaInteres.Size = new System.Drawing.Size(169, 22);
+            this.txtTasaInteres.Properties.MaxLength = 1;
+            this.txtTasaInteres.Size = new System.Drawing.Size(217, 26);
             this.txtTasaInteres.TabIndex = 3;
             this.txtTasaInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteres_KeyPress);
             // 
@@ -107,20 +133,21 @@ namespace PV_Dev
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(4, 112);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl3.Location = new System.Drawing.Point(5, 133);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(112, 21);
+            this.labelControl3.Size = new System.Drawing.Size(133, 24);
             this.labelControl3.TabIndex = 4;
             this.labelControl3.Text = "Tasa Interes:";
             // 
             // txtMonto
             // 
             this.txtMonto.EditValue = "";
-            this.txtMonto.Location = new System.Drawing.Point(141, 65);
-            this.txtMonto.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtMonto.Location = new System.Drawing.Point(181, 77);
+            this.txtMonto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(169, 22);
+            this.txtMonto.Properties.MaxLength = 4;
+            this.txtMonto.Size = new System.Drawing.Size(217, 26);
             this.txtMonto.TabIndex = 2;
             this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
@@ -128,10 +155,10 @@ namespace PV_Dev
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(55, 68);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl2.Location = new System.Drawing.Point(71, 81);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(61, 21);
+            this.labelControl2.Size = new System.Drawing.Size(70, 24);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Monto:";
             // 
@@ -139,74 +166,51 @@ namespace PV_Dev
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(63, 19);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl1.Location = new System.Drawing.Point(81, 23);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(53, 21);
+            this.labelControl1.Size = new System.Drawing.Size(61, 24);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Socio:";
             // 
             // cmbSocio
             // 
-            this.cmbSocio.Location = new System.Drawing.Point(141, 20);
-            this.cmbSocio.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.cmbSocio.Location = new System.Drawing.Point(181, 24);
+            this.cmbSocio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbSocio.Name = "cmbSocio";
             this.cmbSocio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbSocio.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 54, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "Socio", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 53, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 37, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 59, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 70, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 42, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSocio", "id Socio", 69, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("nombre", "Socio", 68, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("apellido", "apellido", 68, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("edad", "edad", 48, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("direccion", "direccion", 76, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("idSucursal", "id Sucursal", 90, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("activo", "activo", 54, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.cmbSocio.Properties.DataSource = this.socioBindingSource;
             this.cmbSocio.Properties.DisplayMember = "nombre";
             this.cmbSocio.Properties.NullText = "";
             this.cmbSocio.Properties.PopupSizeable = false;
             this.cmbSocio.Properties.ValueMember = "idSocio";
-            this.cmbSocio.Size = new System.Drawing.Size(169, 22);
+            this.cmbSocio.Size = new System.Drawing.Size(217, 26);
             this.cmbSocio.TabIndex = 1;
             // 
             // socioBindingSource
             // 
             this.socioBindingSource.DataSource = typeof(DAL.Socio);
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(60, 160);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(56, 21);
-            this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Fecha:";
-            // 
-            // txtCalendar
-            // 
-            this.txtCalendar.EditValue = null;
-            this.txtCalendar.Location = new System.Drawing.Point(141, 160);
-            this.txtCalendar.Name = "txtCalendar";
-            this.txtCalendar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtCalendar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtCalendar.Size = new System.Drawing.Size(169, 22);
-            this.txtCalendar.TabIndex = 7;
-            // 
             // frmNAhorro
             // 
             this.AcceptButton = this.btnGuardar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(352, 314);
+            this.ClientSize = new System.Drawing.Size(453, 373);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNAhorro.IconOptions.SvgImage")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNAhorro";
@@ -215,12 +219,12 @@ namespace PV_Dev
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTasaInteres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMonto.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSocio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.socioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
