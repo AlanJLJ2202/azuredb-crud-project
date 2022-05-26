@@ -34,14 +34,40 @@ namespace PV_Dev
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(cmbSocio.Text) || string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text))
+            /*if (string.IsNullOrEmpty(cmbSocio.Text) || string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text))
             {
 
-                MessageBox.Show("Debe completar la informacion");
+                MessageBox.Show("Falta el socio");
 
                 return;
 
+            }*/
+
+            if (string.IsNullOrEmpty(cmbSocio.Text))
+            {
+                MessageBox.Show("Falta el socio");
+
+                return;
             }
+            else if (string.IsNullOrEmpty(txtCalendar.Text))
+            {
+                MessageBox.Show("Falta la fecha");
+
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtMonto.Text))
+            {
+                MessageBox.Show("Falta el monto");
+
+                return;
+            } else if (string.IsNullOrEmpty(txtTasaInteres.Text))
+            {
+                MessageBox.Show("Falta la tasa de interes");
+
+                return;
+            }
+
+
 
             if (idAhorro > 0)
             {
