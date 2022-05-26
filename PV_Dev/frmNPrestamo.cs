@@ -40,12 +40,33 @@ namespace PV_Dev
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            
-            if (string.IsNullOrEmpty(cmbSocio.Text) || string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text))
+
+            //if (string.IsNullOrEmpty(cmbSocio.Text) || string.IsNullOrEmpty(txtMonto.Text) || string.IsNullOrEmpty(txtTasaInteres.Text))
+            //{
+
+            //    XtraMessageBox.Show("Debe completar la informacion", "Error 404");
+
+            //    return;
+            //}
+
+            if (string.IsNullOrEmpty(cmbSocio.Text))
             {
-
-                XtraMessageBox.Show("Debe completar la informacion", "Error 404");
-
+                XtraMessageBox.Show("Debe llenar el campo de socio", "Error 404");
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtTasaInteres.Text))
+            {
+                XtraMessageBox.Show("Debe llenar el campo de tasa de interes ", "Error 404");
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtMonto.Text))
+            {
+                XtraMessageBox.Show("Debe llenar el campo del monto", "Error 404");
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtCalendar.Text))
+            {
+                XtraMessageBox.Show("Debe llenar el campo de fecha", "Error 404");
                 return;
             }
 

@@ -69,13 +69,13 @@ namespace PV_Dev
             this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(712, 300);
+            this.groupControl1.Size = new System.Drawing.Size(377, 329);
             this.groupControl1.TabIndex = 0;
             // 
             // txtCalendar
             // 
             this.txtCalendar.EditValue = null;
-            this.txtCalendar.Location = new System.Drawing.Point(491, 91);
+            this.txtCalendar.Location = new System.Drawing.Point(138, 193);
             this.txtCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCalendar.Name = "txtCalendar";
             this.txtCalendar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -83,14 +83,14 @@ namespace PV_Dev
             this.txtCalendar.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtCalendar.Size = new System.Drawing.Size(198, 26);
-            this.txtCalendar.TabIndex = 9;
+            this.txtCalendar.TabIndex = 4;
             this.txtCalendar.EditValueChanged += new System.EventHandler(this.txtCalendar_EditValueChanged);
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(382, 89);
+            this.labelControl4.Location = new System.Drawing.Point(22, 192);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(67, 24);
@@ -101,7 +101,7 @@ namespace PV_Dev
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
-            this.btnCancelar.Location = new System.Drawing.Point(247, 220);
+            this.btnCancelar.Location = new System.Drawing.Point(198, 253);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(138, 53);
@@ -112,7 +112,7 @@ namespace PV_Dev
             // btnGuardar
             // 
             this.btnGuardar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGuardar.ImageOptions.SvgImage")));
-            this.btnGuardar.Location = new System.Drawing.Point(51, 220);
+            this.btnGuardar.Location = new System.Drawing.Point(24, 253);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(138, 53);
@@ -125,19 +125,19 @@ namespace PV_Dev
             this.txtTasaInteres.Location = new System.Drawing.Point(188, 90);
             this.txtTasaInteres.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTasaInteres.Name = "txtTasaInteres";
-            this.txtTasaInteres.Properties.MaxLength = 4;
+            this.txtTasaInteres.Properties.MaxLength = 1;
             this.txtTasaInteres.Size = new System.Drawing.Size(148, 26);
-            this.txtTasaInteres.TabIndex = 3;
+            this.txtTasaInteres.TabIndex = 2;
             this.txtTasaInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteres_KeyPress);
             // 
             // txtMonto
             // 
-            this.txtMonto.Location = new System.Drawing.Point(491, 34);
+            this.txtMonto.Location = new System.Drawing.Point(138, 141);
             this.txtMonto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Properties.MaxLength = 4;
             this.txtMonto.Size = new System.Drawing.Size(198, 26);
-            this.txtMonto.TabIndex = 2;
+            this.txtMonto.TabIndex = 3;
             this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
             // cmbSocio
@@ -181,7 +181,7 @@ namespace PV_Dev
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(379, 33);
+            this.labelControl2.Location = new System.Drawing.Point(19, 140);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(70, 24);
@@ -205,7 +205,7 @@ namespace PV_Dev
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(739, 327);
+            this.ClientSize = new System.Drawing.Size(402, 353);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNPrestamo.IconOptions.SvgImage")));
