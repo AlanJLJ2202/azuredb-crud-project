@@ -53,11 +53,47 @@ namespace PV_Dev
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) || string.IsNullOrEmpty(txtEdad.Text)
+            /*if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) || string.IsNullOrEmpty(txtEdad.Text)
                 || string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtSueldo.Text) || string.IsNullOrEmpty(cmbArea.Text) || string.IsNullOrEmpty(cmbSucursal.Text))
             {
 
                 XtraMessageBox.Show("Debe completar la informacion", "Error 404");
+
+                return;
+            }*/
+
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                XtraMessageBox.Show("Falta el nombre", "Error 404");
+
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtApellido.Text))
+            {
+                XtraMessageBox.Show("Falta el apellido", "Error 404");
+
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtEdad.Text))
+            {
+                XtraMessageBox.Show("Falta la edad", "Error 404");
+
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtSueldo.Text))
+            {
+                XtraMessageBox.Show("Falta la Sueldo", "Error 404");
+
+                return;
+            }
+            else if (string.IsNullOrEmpty(cmbArea.Text))
+            {
+                XtraMessageBox.Show("Falta el area", "Error 404");
+
+                return;
+            } else if (string.IsNullOrEmpty(cmbSucursal.Text))
+            {
+                XtraMessageBox.Show("Falta la sucursal", "Error 404");
 
                 return;
             }

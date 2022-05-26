@@ -53,13 +53,31 @@ namespace PV_Dev
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtTelefono.Text))
+            /*if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtTelefono.Text))
             {
 
                 XtraMessageBox.Show("Debe completar la informacion", "Error 404");
 
                 return;
 
+            }*/
+
+
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                XtraMessageBox.Show("Debe completar el nombre", "Error 404");
+
+                return;
+            } else if (string.IsNullOrEmpty(txtDireccion.Text))
+            {
+                XtraMessageBox.Show("Debe completar la direccion", "Error 404");
+
+                return;
+            } else if (string.IsNullOrEmpty(txtTelefono.Text))
+            {
+                XtraMessageBox.Show("Debe completar el telefono", "Error 404");
+
+                return;
             }
 
             if (idSucursal > 0)

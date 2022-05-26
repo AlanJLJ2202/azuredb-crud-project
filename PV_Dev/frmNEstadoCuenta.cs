@@ -129,5 +129,13 @@ namespace PV_Dev
         {
 
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+        }
     }
 }

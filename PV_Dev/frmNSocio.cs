@@ -50,14 +50,32 @@ namespace PV_Dev
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellido.Text) || string.IsNullOrEmpty(txtEdad.Text)
-                || string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(cbSucursal.Text))
+            
+            if (string.IsNullOrEmpty(txtNombre.Text))
             {
-
-                XtraMessageBox.Show("Debe completar la informacion", "Error 404");
+                XtraMessageBox.Show("Falta el nombre", "Error 404");
 
                 return;
+            } else if (string.IsNullOrEmpty(txtApellido.Text))
+            {
+                XtraMessageBox.Show("Falta el apellido", "Error 404");
 
+                return;
+            } else if (string.IsNullOrEmpty(txtEdad.Text))
+            {
+                XtraMessageBox.Show("Falta la edad", "Error 404");
+
+                return;
+            } else if (string.IsNullOrEmpty(txtDireccion.Text))
+            {
+                XtraMessageBox.Show("Falta la direccion", "Error 404");
+
+                return;
+            } else if (string.IsNullOrEmpty(cbSucursal.Text))
+            {
+                XtraMessageBox.Show("Falta la sucursal", "Error 404");
+
+                return;
             }
 
             if (idSocio > 0)

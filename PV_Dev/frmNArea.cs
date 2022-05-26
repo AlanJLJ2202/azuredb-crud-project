@@ -34,13 +34,17 @@ namespace PV_Dev
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtDescripcion.Text))
+         
+            if (string.IsNullOrEmpty(txtNombre.Text))
             {
-
-                MessageBox.Show("Debe completar la informacion");
+                MessageBox.Show("Debe completar el nombre");
 
                 return;
+            } else if (string.IsNullOrEmpty(txtDescripcion.Text))
+            {
+                MessageBox.Show("Debe completar la descripcion");
 
+                return;
             }
 
             if (idArea > 0)
@@ -105,6 +109,11 @@ namespace PV_Dev
             {
                 this.Close();
             }
+        }
+
+        private void frmNArea_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -42,13 +42,25 @@ namespace PV_Dev
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtPassword.Text))
+            /*if (string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
 
                 XtraMessageBox.Show("Debe completar la informacion", "Error 404");
 
                 return;
 
+            }*/
+
+            if (string.IsNullOrEmpty(txtNombre.Text))
+            {
+                XtraMessageBox.Show("Debe completar el nombre", "Error 404");
+
+                return;
+            } else if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                XtraMessageBox.Show("Debe completar la contraseña", "Error 404");
+
+                return;
             }
 
             if (idUsuario > 0)
