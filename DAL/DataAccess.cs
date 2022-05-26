@@ -15,7 +15,12 @@ namespace DAL
 
         private static volatile DataAccess instance = null;
         private static readonly object padlock = new object();
+<<<<<<< HEAD
         public static string conString = "Server=proyectopacs.database.windows.net;Database=ProyectoPacsDB;User Id=adminPacs;Password=Admin12345";
+=======
+        // public static string conString = "Server=DESKTOP-21KVI4D;Database=Pacs1P;User Id=adminPacs;Password=Admin12345";
+        public static string conString = "Server=proyectopacs.database.windows.net;Database=ProyectoPacsDB;User Id = adminPacs; Password=Admin12345";
+>>>>>>> c7524d5726fe5e0e7e8e200a1c94f59fe5896d7e
         //public static string conString = "Data Source = DESKTOP-21KVI4D; Initial Catalog = Pacs1P; Integrated Security = true";
         public string InitialCatalog = "";
         public string DataSource = "";

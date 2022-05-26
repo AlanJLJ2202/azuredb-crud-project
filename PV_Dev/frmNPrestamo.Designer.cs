@@ -39,10 +39,10 @@ namespace PV_Dev
             this.txtTasaInteres = new DevExpress.XtraEditors.TextEdit();
             this.txtMonto = new DevExpress.XtraEditors.TextEdit();
             this.cmbSocio = new DevExpress.XtraEditors.LookUpEdit();
+            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.socioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtCalendar.Properties.CalendarTimeProperties)).BeginInit();
@@ -99,6 +99,7 @@ namespace PV_Dev
             // 
             // btnCancelar
             // 
+            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
             this.btnCancelar.Location = new System.Drawing.Point(247, 220);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -124,6 +125,7 @@ namespace PV_Dev
             this.txtTasaInteres.Location = new System.Drawing.Point(188, 90);
             this.txtTasaInteres.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTasaInteres.Name = "txtTasaInteres";
+            this.txtTasaInteres.Properties.MaxLength = 4;
             this.txtTasaInteres.Size = new System.Drawing.Size(148, 26);
             this.txtTasaInteres.TabIndex = 3;
             this.txtTasaInteres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTasaInteres_KeyPress);
@@ -133,6 +135,7 @@ namespace PV_Dev
             this.txtMonto.Location = new System.Drawing.Point(491, 34);
             this.txtMonto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Properties.MaxLength = 4;
             this.txtMonto.Size = new System.Drawing.Size(198, 26);
             this.txtMonto.TabIndex = 2;
             this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
@@ -158,6 +161,10 @@ namespace PV_Dev
             this.cmbSocio.Properties.ValueMember = "idSocio";
             this.cmbSocio.Size = new System.Drawing.Size(198, 26);
             this.cmbSocio.TabIndex = 1;
+            // 
+            // socioBindingSource
+            // 
+            this.socioBindingSource.DataSource = typeof(DAL.Socio);
             // 
             // labelControl3
             // 
@@ -192,14 +199,12 @@ namespace PV_Dev
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Socio:";
             // 
-            // socioBindingSource
-            // 
-            this.socioBindingSource.DataSource = typeof(DAL.Socio);
-            // 
             // frmNPrestamo
             // 
+            this.AcceptButton = this.btnGuardar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(739, 327);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

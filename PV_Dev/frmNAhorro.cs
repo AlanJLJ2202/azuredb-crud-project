@@ -112,5 +112,13 @@ namespace PV_Dev
                 return;
             }
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show("Estas seguro que deseas salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

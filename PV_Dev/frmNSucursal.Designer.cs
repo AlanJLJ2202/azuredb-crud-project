@@ -56,21 +56,21 @@ namespace PV_Dev
             this.groupControl1.Controls.Add(this.labelControl3);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(9, 10);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.groupControl1.Location = new System.Drawing.Point(12, 12);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(318, 232);
+            this.groupControl1.Size = new System.Drawing.Size(409, 276);
             this.groupControl1.TabIndex = 0;
             // 
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCancelar.ImageOptions.SvgImage")));
-            this.btnCancelar.Location = new System.Drawing.Point(183, 173);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCancelar.Location = new System.Drawing.Point(235, 205);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(103, 42);
+            this.btnCancelar.Size = new System.Drawing.Size(132, 50);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -78,41 +78,44 @@ namespace PV_Dev
             // btnAceptar
             // 
             this.btnAceptar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAceptar.ImageOptions.SvgImage")));
-            this.btnAceptar.Location = new System.Drawing.Point(24, 173);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnAceptar.Location = new System.Drawing.Point(31, 205);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(103, 42);
+            this.btnAceptar.Size = new System.Drawing.Size(132, 50);
             this.btnAceptar.TabIndex = 4;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(117, 115);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtTelefono.Location = new System.Drawing.Point(150, 137);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtTelefono.Size = new System.Drawing.Size(180, 22);
+            this.txtTelefono.Properties.MaxLength = 10;
+            this.txtTelefono.Size = new System.Drawing.Size(231, 26);
             this.txtTelefono.TabIndex = 3;
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(117, 70);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtDireccion.Location = new System.Drawing.Point(150, 83);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDireccion.Size = new System.Drawing.Size(180, 22);
+            this.txtDireccion.Properties.MaxLength = 15;
+            this.txtDireccion.Size = new System.Drawing.Size(231, 26);
             this.txtDireccion.TabIndex = 2;
             this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(117, 21);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtNombre.Location = new System.Drawing.Point(150, 25);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtNombre.Size = new System.Drawing.Size(180, 22);
+            this.txtNombre.Properties.MaxLength = 10;
+            this.txtNombre.Size = new System.Drawing.Size(231, 26);
             this.txtNombre.TabIndex = 1;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
@@ -120,10 +123,10 @@ namespace PV_Dev
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(17, 118);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl3.Location = new System.Drawing.Point(22, 140);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(81, 21);
+            this.labelControl3.Size = new System.Drawing.Size(94, 24);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "Telefono:";
             // 
@@ -131,10 +134,10 @@ namespace PV_Dev
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(12, 72);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl2.Location = new System.Drawing.Point(15, 86);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(86, 21);
+            this.labelControl2.Size = new System.Drawing.Size(102, 24);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "Direccion:";
             // 
@@ -142,24 +145,24 @@ namespace PV_Dev
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(24, 20);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.labelControl1.Location = new System.Drawing.Point(31, 24);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(74, 21);
+            this.labelControl1.Size = new System.Drawing.Size(87, 24);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Nombre:";
             // 
             // frmNSucursal
             // 
             this.AcceptButton = this.btnAceptar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(338, 253);
+            this.ClientSize = new System.Drawing.Size(435, 300);
             this.Controls.Add(this.groupControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmNSucursal.IconOptions.SvgImage")));
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmNSucursal";
