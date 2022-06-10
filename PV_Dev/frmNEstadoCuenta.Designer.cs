@@ -83,7 +83,6 @@ namespace PV_Dev
             this.btnTotales = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.txtDeuda = new DevExpress.XtraEditors.LabelControl();
-            this.btnSalir = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -639,27 +638,14 @@ namespace PV_Dev
             this.txtDeuda.Appearance.Options.UseForeColor = true;
             this.txtDeuda.Location = new System.Drawing.Point(820, 176);
             this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(34, 16);
+            this.txtDeuda.Size = new System.Drawing.Size(0, 16);
             this.txtDeuda.TabIndex = 16;
-            this.txtDeuda.Text = "Debe:";
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSalir.Location = new System.Drawing.Point(23, 25);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(94, 29);
-            this.btnSalir.TabIndex = 17;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmNEstadoCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnSalir;
             this.ClientSize = new System.Drawing.Size(1020, 629);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.txtDeuda);
             this.Controls.Add(this.labelControl8);
             this.Controls.Add(this.btnTotales);
@@ -760,6 +746,5 @@ namespace PV_Dev
         private DevExpress.XtraEditors.SimpleButton btnTotales;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl txtDeuda;
-        private DevExpress.XtraEditors.SimpleButton btnSalir;
     }
 }
